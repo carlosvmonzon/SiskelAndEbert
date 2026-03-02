@@ -1,0 +1,591 @@
+1 Touch and Go/Night, Mother/Blue Velvet/Where the River Runs Black
+2 Peggy Sue Got Married/That's Life/Crocodile Dundee/The Name of the Rose
+3 Special Show: Colorizing - Hollywood’s New Vandalism
+4 Jumpin’ Jack Flash/Tough Guys/Children of a Lesser God/Round Midnight
+5 The Color of Money/Sid and Nancy/Down by Law/Clockwise
+6 Soul Man/Half Moon Street/From Beyond/True Stories
+7 Something Wild/The Mission/Hoosiers/Sky Bandits
+8 52 Pick-Up/Nobody's Fool/Tai Pan/The Sacrifice
+9 The Mosquito Coast/Streets of Gold/Crocodile Dundee/Rate It X
+10 Star Trek IV: The Voyage Home/An American Tail/Firewalker/Nutcracker: The Motion Picture
+11 Special Episode: Buried Treasure 1986
+12 Heartbreak Ridge/Solarbabies/Little Shop of Horrors/Defense of the Realm
+13 The Golden Child/Crimes of the Heart/¡Three Amigos!/Modern Girls
+14 Platoon/Lady and the Tramp/No Mercy
+15 The Morning After/Native Son/Brighton Beach Memoirs/Mother Teresa
+16 Special Show: Best of 1986
+17 Special Show: Worst of 1986
+18 The Stepfather/Duet for One/Wanted: Dead or Alive/Hoosiers
+19 Special Show: Cult Video
+20 Radio Days/Critical Condition/Outrageous Fortune/Restless Natives
+21 Black Widow/From the Hip/Light of Day/Dead of Winter
+22 Over the Top/84 Charing Cross Road/Death Before Dishonor/Working Girls
+23 Tin Men/Some Kind of Wonderful/Angel Heart/A Nightmare on Elm Street 3: The Dream Warriors
+24 Special Show: Hollywood's Outdated Ratings System
+25 Heat/Lethal Weapon/Lily Tomlin/Raising Arizona
+26 Burglar/Hollywood Shuffle/Street Smart/Beyond Therapy
+27 Blind Date/Dolls/The Hanoi Hilton/Swimming to Cambodia
+28 Making Mr. Right/Evil Dead 2: Dead by Dawn/Secret of My Success/Prick Up Your Ears
+29 Project X/Wild Thing/Heaven/Gothic
+30 Extreme Prejudice/Marlene/Personal Services/Sweet Lorraine
+31 Special Show: Previews of Coming Attractions
+32 Gardens of Stone/The River's Edge
+33 Special Show: Guilty Pleasures
+34 Beverly Hills Cop II/Amazing Grace and Chuck/Ishtar/The Chipmunk Adventure
+35 The Untouchables/The Witches of Eastwick/Harry and the Hendersons
+36 Predator/Million Dollar Mystery/The Believers/Salvation
+37 Full Metal Jacket/Spaceballs/Benji the Hunted
+38 Dragnet/Adventures in Babysitting/Innerspace
+39 Special Show: Buried Treasures - 1987 Edition
+40 RoboCop/The Squeeze/Snow White and the Seven Dwarfs/Withnail and I
+41 La Bamba/The Whistle Blower/Revenge of the Nerds II: Nerds in Paradise/Jean De Florette
+42 Jaws: The Revenge/A Man in Love/Summer School/Wish You Were Here
+43 The Living Daylights/Maid to Order/The Lost Boys/Stakeout
+44 Back to the Beach/Nadine/Dirty Dancing/Rita, Sue and Bob Too!
+45 The Big Easy/The Fourth Protocol/No Way Out/Tampopo
+46 Fatal Attraction/The Principal/Orphans/Amazon Women on the Moon/In the Mood
+47 The Princess Bride/China Girl/The Big Town/The Pick-Up Artist/I've Heard the Mermaids Sing
+48 Chuck Berry: Hail! Hail! Rock 'n' Roll/Like Father Like Son/Baby Boom/Big Shots/Matewan
+49 Surrender/Someone to Watch Over Me/Dancers/House of Games/Maurice
+50 Suspect/Killing Time/Barfly/Weeds/Hope and Glory
+51 The Sicilian/Prince of Darkness/No Man's Land/The Glass Menagerie/The Whales of August
+52 Made in Heaven/Less Than Zero/Hello Again/Russkies/Hiding Out
+53 Fatal Beauty/The Hidden/Cry Freedom/Dark Eyes
+54 The Last Emperor/Cross My Heart/The Running Man/Sign o' the Times/Steel Dawn
+55 Planes, Trains and Automobiles/Cinderella/Three Men and a Baby/Date with an Angel/Teen Wolf Too
+56 The Duxorcist/Walker/Manon of the Spring/The Dead
+57 Wall Street/Throw Momma from the Train/Broadcast News/Empire of the Sun
+58 Moonstruck/Overboard/September/*Batteries Not Included/Ironweed
+59 Good Morning, Vietnam/Leonard Part 6/Eddie Murphy Raw/Housekeeping/Siesta
+60 Special Show: The Best Films of 1987
+61 Special Show: The Worst Films of 1987
+62 The Couch Trip/For Keeps/Dear America: Letters Home from Vietnam/Rent-a-Cop/The Lonely Passion of Judith Hearn
+63 Special Show: New Faces in the Movies
+64 Shoot to Kill/The Serpent and the Rainbow/She's Having a Baby/The Unbearable Lightness of Being/School Daze
+65 Special Show: The Career of Robin Williams
+66 Special Show: Oscar Nomination Surprises for 1987
+67 Frantic/Hairspray/Cop/Au Revoir Les Enfants/The Manchurian Candidate
+68 Switching Channels/And God Created Woman/The House on Carroll Street/Shy People
+69 Special Show: What's Wrong with Home Video
+70 Little Nikita/Vice Versa/D.O.A./Off Limits/Stand and Deliver
+71 Biloxi Blues/Johnny Be Good/A New Life/The Milagro Beanfield War/Dominick and Eugene
+72 Bright Lights, Big City/The Seventh Sign/Beetlejuice/Babette's Feast
+73 Colors/18 Again!/Above the Law/Bad Dreams
+74 A Time of Destiny/Bellman and True/High Season/The Moderns/Tokyo Pop
+75 The Blue Iguana/Critters 2/Lady in White/Permanent Record/The Lighthorseman
+76 Shakedown/Stormy Monday/Sunset/Two Moon Junction/White Mischief
+77 Willow/Jack's Back/Assault of the Killer Bimbos/Powaqqatsi/Da
+78 Special Show: Barbra Streisand
+79 Funny Farm/Rambo III/Big/Call Me/Crocodile Dundee II
+80 Big Business/A Taxing Woman/The Presidio/Bull Durham/Travelling North
+81 Red Heat/A World Apart/Rikky and Pete/Poltergeist III/Wings of Desire
+82 Who Framed Roger Rabbit/The Great Outdoors/Aria
+83 Arthur 2: On the Rocks/Short Circuit 2/Coming to America/A Handful of Dust/License to Drive
+84 The Dead Pool/Phantasm II/Midnight Run/Boyfriends and Girlfriends/Die Hard
+85 Big Top Pee Wee/Monkey Shines: An Experiment in Fear/A Fish Called Wanda/Mr. North/Bambi
+86 Special Show: Hidden Stars
+87 Tucker: The Man and His Dream/Vibes/Cocktail/Clean and Sober/Bagdad Cafe
+88 Betrayed/Stealing Home/The Last Temptation of Christ/Married to the Mob/Hero and the Terror
+89 Moon Over Parador/Eight Men Out/Running on Empty/The Thin Blue Line/Crossing Delancey
+90 Gorillas in the Mist/Patty Hearst/Sweet Hearts Dance/Miles from Home/Dead Ringers
+91 Punchline/Heartbreak Hotel/Memories of Me/Bird/Kansas
+92 Alien Nation/Elvira: Mistress of the Dark/Imagine: John Lennon/Salaam Bombay/Track 29
+93 The Accused/Another Woman/Madame Sousatzka/Hotel Terminus/Clara's Heart
+94 Things Change/Bat*21/Without a Clue/Mystic Pizza/Daffy Duck's Quackbusters
+95 Hidden Horror
+96 Everybody's All-American/U2: Rattle and Hum/The Good Mother/Little Dorrit/A Cry in the Dark
+97 The Movies That Made Us Critics
+98 Last Rites/Oliver & Co./The Land Before Time/Far North/Child's Play
+99 Cocoon: The Return/Full Moon in Blue River/Scrooged/Hanna's War/Buster
+100 The Naked Gun/Dakota/Mississippi Burning/Vincent
+101 Dirty Rotten Scoundrels/Tequila Sunrise/Twins/My Stepmother Is an Alien
+102 Working Girl/I'm Gonna Git You Sucka/Rain Man/Torch Song Trilogy/Haunted Summer
+103 Talk Radio/Hellbound: Hellraiser II/The Accidental Tourist/The Boost/Pelle the Conqueror
+104 The Best Films of 1988
+105 The Worst Films of 1988
+106 Beaches/We Think the World of You/Dangerous Liaisons/The January Man/36 Fillette
+107 The New Faces of 1989
+108 Physical Evidence/Parents/Gone with the Wind (50th Anniversary)/The Dressmaker
+109 Her Alibi/Three Fugitives/Lawrence of Arabia/Kinjite: Forbidden Subjects/Voices of Sarafina
+110 Cousins/The Mighty Quinn/True Believer/Tap
+111 Oscar Surprises for 1988
+112 Chances Are/Paperhouse/The 'Burbs/Bert Rigby, You're a Fool/High Hopes
+113 New York Stories/Farewell to the King/Lean on Me/Out Cold
+114 Jacknife/The Adventures of Baron Munchausen/Skin Deep/Chocolat
+115 Fletch Lives/Slaves of New York/Leviathan/Rooftops/Police Academy 6: City Under Siege
+116 Video Treasures
+117 The Dream Team/Sing/Troop Beverly Hills/Crusoe/Powwow Highway
+118 They'll Do it Every Time: Part One
+119 Winter People/Say Anything.../Field of Dreams/She's Out of Control/Dead Calm
+120 See You in the Morning/Disorganized Crime/Speed Zone/Checking Out/Little Vera
+121 Miss Firecracker/K-9/Criminal Law/Scandal/84 Charlie Mopic
+122 Lost Angels/The Return of Swamp Thing/Getting It Right/Listen to Me/La Letrice
+123 Earth Girls Are Easy/How to Get Ahead in Advertising/See No Evil, Hear No Evil/For Queen & Country/The Rainbow
+124 Hail, Hail, Black and White
+125 Indiana Jones and the Last Crusade/Miracle Mile/Pink Cadillac/Road House/Scenes from the Class Struggle in Beverly Hills
+126 The Movies That Made Us Critics 1989
+127 Star Trek V/No Holds Barred/Dead Poets Society/Let's Get Lost/Renegades
+128 Spike Lee
+129 Batman/Honey, I Shrunk the Kids/Tummy Trouble/Ghostbusters II/Kung-Fu Master!
+130 Video Discoveries
+131 Lethal Weapon 2/The Karate Kid Part III/Great Balls of Fire/Weekend at Bernie's/A Taxing Woman Returns
+132 Licence to Kill/Peter Pan/When Harry Met Sally
+133 UHF/Valentino Returns/Shag
+134 Sex, Lies, and Videotape/Young Einstein/Parenthood/The Music Teacher
+135 New Faces of 1989
+136 Casualties of War/Rude Awakening/Uncle Buck/The Abyss/A Chorus of Disapproval
+137 The Package/Wired/Cookie/Little Monsters/The Little Thief
+138 Sea of Love/True Love/The Big Picture/Shirley Valentine/The Rachel Papers
+139 Black Rain/Heavy Petting/In Country/A Dry White Season/Heart of Dixie
+140 Johnny Handsome/War Party/Welcome Home/Queen of Hearts/Erik the Viking
+141 Old Gringo/The Girl in a Swing/An Innocent Man/Drugstore Cowboy/Tom Jones
+142 The Fabulous Baker Boys/Breaking In/Crimes and Misdemeanors/Look Who's Talking
+143 Fat Man and Little Boy/I, Madman/Gross Anatomy/Story of Women/When the Whales Came
+144 Immediate Family/The Bear/Dad/Next of Kin/Carnival of Souls
+145 Bloodhounds of Broadway/Dealers/Limit Up/My Left Foot/Shocker
+146 The Best Films of the '80s
+147 Harlem Nights/The Little Mermaid/Steel Magnolias/Valmont
+148 Back to the Future Part II/All Dogs Go to Heaven/Henry V/Prancer/Sidewalk Stories
+149 National Lampoon's Christmas Vacation/Roger & Me/Triumph of the Spirit/Mystery Train/Thelonius Monk: Straight, No Chaser
+150 She-Devil/Driving Miss Daisy/War of the Roses/Glory/Enemies: A Love Story
+151 Family Business/Blaze/We're No Angels/The Wizard/The Rosegarden
+152 Always/Music Box/Born on the Fourth of July/Tango and Cash/Camille Claudel
+153 Special Show: Best of 1989
+154 Special Show: Worst of 1989
+155 Breakthrough Stars of 1990
+156 Tremors/Ski Patrol/Internal Affairs/The Plot Against Harry
+157 Stella/Heart Condition/Men Don't Leave/Flashback/Cinema Paradiso
+158 Stanley & Iris/Homer and Eddie/Loose Cannons/Sweetie/The White Girl
+159 Oscar Nomination Surprises for 1989
+160 Mountains of the Moon/Where the Heart Is/Revenge/Hard to Kill/Madhouse
+161 The Hunt for Red October/House Party/Courage Mountain/Rosalie Goes Shopping/Too Beautiful for You
+162 Joe Versus the Volcano/The Handmaid's Tale/Bad Influence/Coupe De Ville/Love at Large
+163 Blue Steel/Lord of the Flies/Nuns of the Run/The Last of the Finest/Black Rain
+164 Pretty Woman/Blind Fury/A Shock to the System/The Fourth War/Lambada
+165 I Love You to Death/Teenage Mutant Ninja Turtles/Cry-Baby/The Cook, The Thief, His Wife and Her Love/Henry: Portrait of a Serial Killer
+166 Crazy People/Impulse/In the Spirit/The Gods Must Be Crazy II/Mama, There's a Man in Your Bed
+167 Miami Blues/Vital Signs/Lisa/Chattahoochee
+168 Q & A/Spaced Invaders/The Guardian/Monsieur Hire
+169 Short Time/Tie Me Up! Tie Me Down!/Wild Orchid/Without You I'm Nothing/Santa Sangre
+170 You Blew It!
+171 Bird On a Wire/Last Exit to Brooklyn/Back to the Future Part III/Cadillac Man/Longtime Companion
+172 Total Recall/Strapless/Fire Birds/Class of 1999/Jesus of Montreal
+173 Dick Tracy/Torn Apart/Another 48hrs.
+174 Arnold Schwarzenegger: The Unlikeliest Star
+175 RoboCop 2/The Adventures of Milo and Otis/Betsy's Wedding/Gremlins 2: The New Batch/The Big Bang
+176 Die Hard 2/Ghost Dad/Days of Thunder/May Fools
+177 Quick Change/Arachnophobia/Ghost/The Adventures of Ford Fairlaine/Jetsons: The Movie
+178 The Freshman/The Jungle Book/Navy SEALs/The Unbelievable Truth/How to Make Love to a Negro Without Getting Tired
+179 Presumed Innocent/Chicago Joe and the Showgirl/Mo' Better Blues/Cinema Paradiso
+180 Tom Cruise: The Star Next Door
+181 Flatliners/Young Guns II/The Two Jakes/Metropolitan/Life Is Cheap... But Toilet Paper Is Expensive
+182 Hollywood's Hidden Stars
+183 Darkman/Wild at Heart/Pump Up the Volume/My Blue Heaven/The Witches
+184 Bogie & Jack
+185 Postcards from the Edge/State of Grace/White Hunter, Black Heart/After Dark, My Sweet
+186 Goodfellas/Narrow Margin/Funny About Love/The Tall Guy
+187 Pacific Heights/King of New York/Miller's Crossing/Texasville
+188 Avalon/Listen Up/Henry & June/Desperate Hours
+189 The Hot Spot/Mr. Destiny/Memphis Belle/Welcome Home, Roxy Carmichael
+190 Reversal of Fortune/Quigley Down Under/White Palace/Night of the Living Dead
+191 Special Show: Silent Movies
+192 Jacob's Ladder/Waiting for the Light/Tune in Tomorrow/Vincent & Theo
+193 Dances with Wolves/Graffiti Bridge/The Krays/The Rescuers Down Under
+194 Rocky V/Child's Play 2/Home Alone/The Nasty Girl
+195 Three Men and a Little Lady/The Nutcracker Prince/Predator 2/Mr. & Mrs. Bridge
+196 Misery/Hidden Agenda/Cyrano de Bergerac
+197 The Rookie/Berkeley in the Sixties/Edward Scissorhands/The Grifters
+198 Havana/Mermaids/The Sheltering Sky/Awakenings/The Long Walk Home
+199 The Godfather Part III/Kindergarten Cop/The Bonfire of the Vanities/The Russia House
+200 Green Card/Almost an Angel/Hamlet/Come See the Paradise/Alice
+201 Special Show: Best of 1990
+202 Special Show: Worst of 1990
+203 Once Around/Men of Respect/Flight of the Intruder/White Fang/Not Without My Daughter
+204 Special Show: Breakthrough Stars of 1991
+205 Queens Logic/Run/Meet the Applegates/The Vanishing
+206 L.A. Story/Sleeping with the Enemy/The Silence of the Lambs
+207 Special Show: Oscar Nomination Surprises for 1990
+208 Scenes from a Mall/Nothing But Trouble/He Said, She Said/King Ralph/The Field
+209 The Doors/My Heroes Have Always Been Cowboys/Iron & Silk/Superstar
+210 The Hard Way/Closet Land/New Jack City/Shipwrecked/Ju-Dou
+211 Class Action/If Looks Could Kill/Guilty by Suspicion/True Colors
+212 Teenage Mutant Ninja Turtles II/The Comfort of Strangers/Defending Your Life/Mister Johnson/La Femme Nikita
+213 Special Show: Tom Cruise - The Star Next Door
+214 The Marrying Man/Career Opportunities/The Five Heartbeats/The Object of Beauty/Daddy Nostalgia
+215 Buried Treasures - 1991 Edition
+216 Mortal Thoughts/Impromptu/Out for Justice/Journey of Hope
+217 Oscar/Toy Soldiers/A Kiss Before Dying/Citizen Kane 50th Anniversary/A Rage in Harlem
+218 The Movies We Loved as Kids
+219 One Good Cop/FX2/Switch/Spartacus/Drowning by Numbers
+220 Backdraft/Truly Madly Deeply/Madonna: Truth or Dare/The Ballad of the Sad Cafe/A Rage in Harlem
+221 Thelma & Louise/Hangin' with the Homeboys/Dice Rules/Wild Hearts Can't Be Broken
+222 Soapdish/What About Bob?/Hudson Hawk/Only the Lonely
+223 City Slickers/Don't Tell Mom the Babysitter's Dead/Jungle Fever/An Angel at My Table
+224 Robin Hood: Prince of Thieves/Straight Out of Brooklyn/Dark Obsession/Bright Angel
+225 Dying Young/Kickboxer 2/The Rocketeer/Tatie Danielle
+226 Terminator 2: Judgement Day/The Reflecting Skin/Naked Gun 2-1/2/Europa Europa
+227 Regarding Henry/101 Dalmatians/Point Break/Boys N the Hood/The Miracle
+228 The Doctor/Dutch/Bill and Ted's Bogus Journey/My Father's Glory/My Mother's Castle
+229 V.I. Warshawski/Trust/Life Stinks/Mobsters/Slacker
+230 Doc Hollywood/Return to the Blue Lagoon/Hot Shots!/Paris Is Burning/Another You
+231 Barton Fink/Double Impact/Sex, Drugs, Rock & Roll/Pure Luck/The Commitments
+232 Dead Again/True Identity/Harley Davidson and the Marlboro Man/Defenseless/The Pope Must Die
+233 Dogfight/Late for Dinner/Rambling Rose/Blood & Concrete
+234 Paradise/Livin' Large/The Fisher King/The Indian Runner
+235 Deceived/Necessary Roughness/The Search for Signs of Intelligence Life in the Universe/The Rapture/My Own Private Idaho
+236 Shout/The Man in the Moon/The Super/Stepping Out/Whore
+237 Frankie and Johnny/Homicide/Little Man Tate/Ricochet/Shattered
+238 Other People's Money/Ernest Scared Stupid/City of Hope/Life Is Sweet
+239 Curly Sue/House Party 2/The Butcher's Wife/The Rolling Stones at the Max/La Belle Noiseuse
+240 29th Street/Highlander 2: The Quickening/Billy Bathgate/Year of the Gun
+241 Cape Fear/Strictly Business/All I Want for Christmas/Liebestraum/The People Under the Stairs
+242 Beauty and the Beast/Black Robe/My Girl/Meeting Venus
+243 The Addams Family/American Tail: Fievel Goes West/For the Boys/Hearts of Darkness: A Filmmaker's Apocalypse/Prospero's Books
+244 They'll Do It Every Time Part II
+245 Bugsy/Let Him Have It/At Play in the Fields of the Lord/Kafka
+246 The Last Boy Scout/Star Trek VI: The Undiscovered Country/Convicts/Hook/The Double Life of Veronique
+247 JFK/Grand Canyon/Father of the Bride/The Inner Circle
+248 Rush/Naked Lunch/The Prince of Tides/Fried Green Tomatoes/Madame Bovary
+249 Special Show: Best of 1991
+250 Special Show: Worst of 1991
+251 Memo to the Academy - 1992
+252 Freejack/Until the End of the World/Juice/The Hand That Rocks the Cradle
+253 Shining Through/Hear My Song/Mississippi Masala/35Up/Love Crimes
+254 Nolte & Sarandon
+255 Wayne's World/Medicine Man/Final Analysis/Voyager/Rhapsody in August
+256 Stop! Or My Mom Will Shoot!/Radio Flyer/Falling from Grace
+257 Memoirs of an Invisible Man/Under Suspicion/The Mambo Kings/This Is My Life
+258 Breakthrough Stars of 1992
+259 My Cousin Vinny/Article 99/American Me/The Lawnmower Man/Shakes the Clown/Daughters of the Dust
+260 Basic Instinct/American Dream/Howards End/Shadows and Fog/Othello
+261 White Men Can't Jump/The Cutting Edge/The Power of One/Ruby/Noises Off...
+262 Straight Talk/Rock-a-Doodle/Thunderheart/Beethoven/Raise the Red Lantern
+263 The Player/FernGully: The Last Rainforest/Newsies/The Puerto Rican Mambo/Edward II
+264 City of Joy/Proof/The Babe/Deep Cover/The Famine Within
+265 White Sands/A Midnight Clear/Passed Away/The Playboys/Delicatessen
+266 Guilty Pleasures - 1992
+267 Folks!/K2/One False Move/Poison Ivy/Leaving Normal
+268 Lethal Weapon 3/The Favour, the Watch and the Very Big Fish/The Waterdance/Night on Earth/All the Vermeers in New York
+269 Sister Act/Encino Man/Alien 3/Far and Away
+270 Patriot Games/Monster in the Box/Class Act/Zentropa
+271 Batman Returns/Cold Heaven/Housesitter/Cousin Bobby/The Hairdresser's Husband
+272 Unlawful Entry/Pinocchio/A League of Their Own/Highway 61/The Adjuster
+273 Prelude to a Kiss/Universal Soldier/Boomerang/Wisecracks/The Best Intentions
+274 They'll Do It Every Time: Part Two
+275 A Stranger Among Us/Man Trouble/Honey, I Blew Up the Kid/Cool World/The Hours and Times
+276 Unforgiven/Mistress/Death Becomes Her/Enchanted April/London Kills Me
+277 Single White Female/Little Nemo: Adventures in Slumberland/Light Sleeper/Rapid Fire/Diggstown
+278 Honeymoon in Vegas/Christopher Columbus: The Discovery/Bob Roberts/Storyville/A Brief History of Time
+279 Sneakers/Where the Day Takes You/Husbands and Wives/Wind/Swoon
+280 School Ties/South Central/Sarafina!/Singles/Blade Runner
+281 The Last of the Mohicans/Innocent Blood/Mr. Saturday Night/Glengarry Glen Ross/Laws of Gravity
+282 Hero/The Mighty Ducks/Mr. Baseball/Of Mice and Men/An American in Paris
+283 Buried Treasures 1992
+284 The Public Eye/Candyman/Under Siege/A River Runs Through It/Night and the City
+285 Pure Country/Frozen Assets/Hugh Hefner: Once Upon a Time/Consenting Adults/Reservoir Dogs
+286 Robert Redford – Classic Star, Maverick Director
+287 Jennifer 8/The Lover/Aladdin/Passenger 57/Flirting
+288 Malcolm X/Bram Stoker's Dracula/Traces of Red/Love Potion #9
+289 Home Alone 2: Lost in New York/My New Gun/Bad Lieutenant/The Efficiency Expert
+290 Steve Martin
+291 The Distinguished Gentleman/Brother's Keeper/The Bodyguard/The Crying Game/Close to Eden
+292 A Few Good Men/The Muppet Christmas Carol/Leap of Faith/Passion Fish
+293 Forever Young/Damage/Toys/Scent of a Woman/Used People
+294 Hoffa/Trespass/Chaplin/Lorenzo's Oil/Peter's Friends
+295 The Best Films of 1992
+296 The Worst Films of 1992
+297 Memo to the Academy - 1993
+298 Matinee/Alive/Body of Evidence/Sniper
+299 Crix Pick Prez Flix
+300 National Lampoon's Loaded Weapon 1/The Cemetery Club/Sommersby/The Vanishing/Homeward Bound: The Incredible Journey
+301 Untamed Heart/Strictly Ballroom/Groundhog Day/Love Field/Riff-Raff
+302 Falling Down/The Temp/Army of Darkness
+303 Mad Dog and Glory/El Mariachi/Rich in Love/The Last Days of Chez Nous
+304 Amos & Andrew/Swing Kids/Shadow of the Wolf/Mac/Nothing But a Man
+305 Hollywood's Fear of Love
+306 Point of No Return/CB4/Fire in the Sky/Barbarians at the Gate/Il Lardo Di Bambini
+307 Born Yesterday/Teenage Mutant Ninja Turtles III/Married to It/Like Water for Chocolate
+308 Cop and a Half/The Adventures of Huck Finn/Jack the Bear/The Opposite Sex How to Live with Them/Intervista
+309 This Boy's Life/The Sandlot/Indecent Proposal/Bodies, Rest & Motion/The Abyss
+310 Benny & Joon/The Positively True Adventures of the Alledged Texas Cheerleader Murdering Mom/Map of the Human Heart/Visions of Light: The Art of Cinematography
+311 The Dark Half/Who's the Man?/Indian Summer/Boling Point/Wide Sargasso Sea
+312 Splitting Heirs/Sidekicks/Three of Hearts/Bound by Honor/The Night We Never Met
+313 Dave/My Neighbor Totoro/Dragon: The Bruce Lee Story/Much Ado About Nothing/The Pickle
+314 Lost in Yonkers/Carnosaur/American Heart/Posse/The Story of Qiu Ju
+315 The Seventies
+316 Made in America/Menace II Society/Cliffhanger/Hot Shots! Part Deux/The Long Day Closes
+317 Life with Mikey/Super Mario Bros./Guilty as Sin/What's Love Got to Do with It
+318 Kid Vid
+319 Last Action Hero/Once Upon a Forest/Jurassic Park/The Music of Chance
+320 The Firm/House of Cards/Sleepless in Seattle/Dennis the Menace/Orlando
+321 In the Line of Fire/Son in Law/Rookie of the Year/Free Willy/Jacquot
+322 Coneheads/Benefit of the Doubt/Poetic Justice/Another Stakeout/Hocus Pocus
+323 Rising Sun/Tom and Jerry: The Movie/Robin Hood: Men in Tights/So I Married an Axe Murderer/Searcing for Bobby Fischer
+324 The Fugitive/The Meteor Man/Manhattan Murder Mystery/The Secret Garden/The Wedding Banquet
+325 Our Favorite Scenes
+326 The Man Without a Face/Wilder Napalm/King of the Hill/Hard Target/And the Band Played On
+327 True Romance/The Ballad of Little Jo/Kalifornia/The Joy Luck Club/The Real McCoy
+328 Striking Distance/Into the West/The Age of Innocence/Household Saints/Baraka
+329 The Good Son/The Program/A Bronx Tale/Bopha!/Dazed and Confused
+330 Malice/Cool Runnings/Short Cuts/M. Butterfly/For Love or Money
+331 Rudy/A Life in the Theatre/Gettysburg/Farewell, My Concubine/Mr. Jones
+332 The Beverly Hillbillies/Ruby in Paradise/The Nightmare Before Christmas/Fearless/Mr. Wonderful
+333 Tommy Lee Jones
+334 Fatal Instinct/Demolition Man/The Remains of the Day/Twenty Bucks
+335 Flesh and Bone/RoboCop 3/Look Who's Talking Now/A Home of Our Own/The War Room
+336 Carlito's Way/The Piano/My Life/The Three Musketeers/Jamón Jamón
+337 Addams Family Values/The Snapper/Dangerous Game/The Saint of Fort Washington/Like Water for Chocolate
+338 A Perfect World/We're Back! A Dinosaur's Story/Mrs. Doubtfire/The Nutcracker/A Dangerous Woman
+339 Holiday Video Gift Guide
+340 Schindler's List/Geronimo/Sister Act 2/Wayne's World 2/Six Degrees of Separation
+341 The Pelican Brief/Beethoven's 2nd/Philadelphia/What's Eating Gilbert Grape/Wrestling Ernest Hemmingway
+342 Heaven and Earth/Grumpy Old Men/Shadowlands/In the Name of the Father/The Summer House
+343 The Best Films of 1993
+344 The Worst Films of 1993
+345 Memo to the Academy - 1994
+346 Intersection/The Air Up There/Body Snatchers/Iron Will/Hoop Dreams
+347 Blink/Naked/I'll Do Anything/The Thing Called Love/Blue
+348 My Father the Hero/Ace Ventura: Pet Detective/Romeo Is Bleeding/Gunmen/Tombstone
+349 The Getaway/Blank Check/My Girl 2
+350 Blue Chips/Midnight Cowboy/Reality Bites/The Critic/The Scent of Green Papaya
+351 8 Seconds/You So Crazy/Sugar Hill/On Deadly Ground/Fiorlie
+352 Angie/China Moon/Greedy/Sirens/The Chase
+353 Guarding Tess/Lightning Jack/The Hudsucker Proxy/The Ref/Belle Epoque/Germinal
+354 Naked Gun 33 1/3: The Final Insult/Monkey Trouble/The Paper/Bitter Moon/Savage Nights
+355 Four Weddings and a Funeral/The Cement Garden/Above the Rim/Raining Stones/The Wonderful Horrible Life of Leni Riefenstahl
+356 Jimmy Hollywood/Thumbelina/The House of the Spirits/Major League II/D2: The Mighty Ducks
+357 Red Rock West/Clifford/Threesome/Silent Tongue/The Blue Kite
+358 Serial Mom/White Fang 2: Myth of the White Wolf/Cops & Robbersons/Backbeat/32 Short Films About Glen Gould
+359 Bad Girls/The Inkwell/Naked in New York/Brainscan/Surviving the Game
+360 When a Man Loves a Woman/PCU/With Honors/No Escape/The Favor
+361 That's Entertainment III/3 Ninjas Kick Back/Being Human/Dream Lover/Kika
+362 Crooklyn/Clean Slate/The Crow/Babyfever/Sunday's Children
+363 Maverick/Trading Mom/The Return of Jafar/Widows' Peak/Even Cowgirls Get the Blues
+364 The Cowboy Way/Beverly Hills Cop III/Renaissance Man/The Flintstones/Little Buddha
+365 Speed/The Endless Summer 2/The Lion King/City Slickers II: The Legend of Curley's Gold
+366 Getting Even with Dad/Fear of a Black Hat/Wolf/White
+367 Blown Away/Little Big League/I Love Trouble/The Shadow/Baby's Day Out/Wyatt Earp
+368 On the Sunny Side of the Screen
+369 True Lies/Angels in the Outfield/Forrest Gump/Mi Vida Loca/Bhaji on the Beach
+370 The Client/Lassie/It Could Happen to You/North/Barcelona
+371 Corrina, Corrina/In the Army Now/Clear and Present Danger/The Mask/In the Land of the Deaf
+372 Color of Night/Andre/Killing Zoe/A Man in Uniform/Eat Drink Man Woman
+373 Natural Born Killers/Blankman/Fresh/Wagons East/The Advocate
+374 Quiz Show/Milk Money/A Simple Twist of Fate/A Good Man in Africa/What Happened Was...
+375 Why Gump? Why Now?
+376 The Shawshank Redemption/Timecop/Terminal Velocity/The New Age/Blue Sky
+377 The River Wild/Jason's Lyric/Ed Wood/The Scout/Rapa Nui
+378 Only You/Second Best/Pulp Fiction
+379 Love Affair/Wes Craven's New Nightmare/Exit to Eden/Hoop Dreams/The Specialist/Little Giants
+380 Radioland Murders/I Like It Like That/Bullets Over Broadway/Imaginary Crimes/Clerks
+381 The Road to Wellville/Silent Fall/Stargate/The Last Seduction/Vanya on 42nd Street
+382 The War/Double Dragon/Mary Shelley's Frankenstein/Oleanna/Drop Squad
+383 Interview with the Vampire/Pontiac Moon/The Santa Clause/Heavenly Creatures/Dr. Strangelove
+384 Star Trek: Generations/The Swan Princess/Miracle on 34th Street/The Professional/To Live
+385 Junior/A Low Down Dirty Shame/The Pagemaster/Mrs. Parker and the Vicious Circle/Red
+386 Cobb/Tom & Viv/Trapped in Paradise/Ladybird, Ladybird/Nostradamus
+387 Disclosure/Drop Zone/Nell/The Last Buffalo/Into the Deep/Immortal Beloved
+388 Speechless/Dumb and Dumber/Legends of the Fall/Little Women/Death and the Maiden/The Madness of King George
+389 I.Q./Ri¢hie Ri¢h/Ready to Wear/Nobody's Fool/Mixed Nuts/The Jungle Book
+390 The Best Films of 1994
+391 The Worst Films of 1994
+392 Memo to the Academy - 1995
+393 Bad Company/Far from Home: The Adventures of Yellow Dog/Murder in the First/Higher Learning/S.F.W./Strawberry and Chocolate
+394 Miami Rhapsody/Federal Hill/Before Sunrise/A Man of No Importance/Safe Passage
+395 Boys on the Side/Highlander: The Final Dimension/In the Mouth of Madness/The Secret of Roan Inish
+396 The Quick and the Dead/Shallow Grave/The Jerky Boys: The Movie/Crumb
+397 Just Cause/Billy Madison/The Brady Bunch Movie/Mr. Payback
+398 Exotica/Heavyweights/The Wild Bunch/Once Were Warriors
+399 Roommates/Muriel's Wedding/Hideaway/The Good Old Boys/Citizen X
+400 Outbreak/Candyman: Farewell to the Flesh/Bye Bye Love/Losing Isaiah/Farinelli
+401 Dolores Claiborne/Funny Bones/Major Payne/Circle of Friends/Tall Tale: The Unbelievable Adventures of Pecos Bill
+402 Rob Roy/Tommy Boy/Jefferson in Paris/Bulletproof Heart/Priest
+403 Kiss of Death/Jury Duty/Stuart Saves His Family/The Basketball Diaries/The Pebble and the Penguin
+404 A Pyromaniac's Love Story/While You Were Sleeping
+405 Crimson Tide/A Little Princess/The Perez Family/The Englishman Who Went Up a Hill/Swimming with Sharks
+406 The Bridges of Madison County/Die Hard with a Vengeance/Forget Paris/Titanica/Little Odessa
+407 Casper/Mad Love/Braveheart/Johnny Mnemonic/A Pure Formality
+408 Pulp Faction: The Tarantino Generation
+409 Congo/The Glass Shield/Pocahontas/Fluke
+410 Batman Forever/The Incredibly True Adventure of 2 Girls in Love/Smoke/Safe
+411 Siskel and Ebert Family Values
+412 Apollo 13/Mighty Morphin Power Rangers: The Movie/Judge Dredd/Wigstock: The Movie/Belle De Jour
+413 First Knight/Party Girl/Species/Batman: Mask of the Phantasm/Il Postino
+414 Nine Months/The Indian in the Cupboard/Under Siege 2/Kids/Gross Fatigue
+415 Clueless/An Awfully Big Adventure/Free Willy 2: The Adventure Home/Living in Oblivion/Bandit Queen
+416 Waterworld/Operation Dumbo Drop/The Net/Babe/Country Life
+417 Something to Talk About/Unzipped/Virtuosity/A Walk in the Clouds/The Brothers McMullen/Double Happiness
+418 Villains: So Bad, They're Good
+419 Desperado/Dangerous Minds/Mortal Kombat/Beyond Rangoon/Lord of Illusions/The Tuskegee Airmen
+420 To Wong Foo, Thanks for Everything, Julie Newmar/Magic in the Water/The Innocent/Last of the Dogmen/Truman
+421 The Stars Fell on Henrietta/Hackers/Clockers/Unstrung Heroes/Angus
+422 Showgirls/Canadian Bacon/Se7en/The Run of the Country/A Month by the Lake
+423 To Die For/Steal Big, Steal Little/Devil in a Blue Dress/Moonlight and Valentino/The Big Green
+424 Assassins/Dead Presidents/How to Make an American Quilt/Strange Days/Persuasion
+425 The Scarlet Letter/The Celluloid Closet/Jade/Blue in the Face/Les Miserables
+426 Get Shorty/Now and Then/Mallrats
+427 Vampire in Brooklyn/Mighty Aphrodite/Copycat/Leaving Las Vegas/Never Talk to Strangers
+428 Fair Game/Gold Diggers: The Secret of Bear Mountain/Home for the Holidays/Powder/Three Wishes
+429 The American President/Ace Ventura: When Nature Calls/Kicking and Screaming/Carrington/Total Eclipse
+430 GoldenEye/It Takes Two/Toy Story/The Crossing Guard/Theremin: An Electronic Odyssey
+431 Casino/Two Bits/Money Train/Nick of Time/Frankie Starlight
+432 White Man's Burden/Last Summer in the Hamptons/Wild Bill/The Journey of August King/Things to Do in Denver When You're Dead
+433 Father of the Bride Part II/Reckless/Sabrina/Georgia
+434 Nixon/Jumanji/Heat/Mr. Holland's Opus/Sense and Sensibility/Othello
+435 Dead Man Walking/Cutthroat Island/Sudden Death/Grumpier Old Men/Restoration/Waiting to Exhale
+436 The Best Films of 1995
+437 The Worst Films of 1995
+438 Memo to the Academy - 1996
+439 From Dusk Til Dawn/Eye for an Eye/12 Monkeys/Two If by Sea/Don't Be a Menace to South Central While Drinking Your Juice in the Hood
+440 Screamers/Richard III/Bed of Roses/Once Upon a Time When We Were Colored/Angels and Insects
+441 The Juror/Balto/White Squall/Nico Icon/French Twist
+442 Broken Arrow/Black Sheep/Beautiful Girls/A Midwinter's Tale/Antonia's Line
+443 City Hall/The Late Shift/Happy Gilmore
+444 Before and After/Rumble in the Bronx/Mary Reilly/Unforgettable/Mr. Wrong
+445 Up Close and Personal/Muppet Treasure Island/Fargo/Heidi Fleiss: Hollywood Madam/The Young Poisoner's Handbook
+446 The Birdcage/Homeward Bound II: Lost in San Francisco/Down Periscope/If Lucy Fell/Anne Frank Remembered
+447 Executive Decision/Ed/Two Much/The Star Maker/Land and Freedom
+448 Diabolique/It's My Party/Flirting with Disaster/Girl 6/Little Indian, Big City
+449 Sgt. Bilko/Jack and Sarah/A Family Thing/Carried Away/From the Journals of Jean Seberg
+450 Primal Fear/A Thin Line Between Love and Hate/Faithful/The Last Supper/The Umbrellas of Cherbourg
+451 Getting Away with Murder/James and the Giant Peach/Jane Eyre/Kids in the Hall: Brain Candy/Ghost in the Shell
+452 Celtic Pride/MST3K: The Movie/Roger/Mrs. Winterbourne/The Substitute/Fear/Sweet Nothing
+453 Mulholland Falls/Sunset Park/The Truth About Cats and Dogs/I Shot Andy Warhol/Wings of Courage
+454 The Pallbearer/Barb Wire/Last Dance/The Great White Hype/The Craft
+455 Twister/Captives/Boys/Dead Man/Cold Comfort Farm
+456 Heaven's Prisoners/Welcome to the Dollhouse/Flipper/Of Love and Shadows/The Horseman on the Roof
+457 Eddie/DragonHeart/The Arrival/Mission: Impossible/Spy Hard
+458 The Rock/Heavy/The Phantom/Homage/Ma Saison Preferee
+459 The Cable Guy/Stealing Beauty/Moll Flanders/Sgt. Kabukiman NYPD/The Switchblade Sisters/Madame Butterfly
+460 Eraser/Wallace and Gromit: The Best of Aardman Animation/The Hunchback of Notre Dame/Lone Star/Nelly and Monsieur Arnaud
+461 Striptease/Cold Fever/The Nutty Professor/A Perfect Candidate/Maybe, Maybe Not
+462 Independence Day/Special Effects/Phenomenon
+463 Courage Under Fire/Walking and Talking/Trainspotting/Harriet the Spy
+464 Multiplicity/The Frighteners/Kazaam/Fled/Celestial Clockwork
+465 A Time to Kill/Manny & Lo/Kingpin/Joe's Apartment/The Adventures of Pinocchio
+466 Chain Reaction/Matilda/Emma/Stonewall
+467 Jack/Aladdin and the King of Thieves/Escape from L.A./Basquiat/The Pompatus of Love
+468 Tin Cup/House Arrest/Killer: A Journal of Murder/Alaska/Butterfly Kiss
+469 A Very Brady Sequel/She's the One/Kansas City/Girls Town/The Spitfire Grill
+470 Bogus/The Big Squeeze/Bulletproof/The Trigger Effect/The Island of Dr. Moreau
+471 American Buffalo/Fly Away Home/Feeling Minnesota/The Rich Man's Wife/Grace of My Heart/The Wife
+472 The First Wives Club/Big Night/Surviving Picasso/Last Man Standing/Paradise Lost: The Child Murders at Robin Hood Hills
+473 Extreme Measures/Secrets & Lies/2 Days in the Valley/Caught/Ed's Next Move
+474 That Thing You Do!/Bound/Michael Collins/Infinity/If These Walls Could Talk
+475 The Chamber/The Ghost and the Darkness/The Long Kiss Goodnight/Looking for Richard/Freeway
+476 Sleepers/Get on the Bus/To Gillian on Her 37th Birthday/Jude/Swingers
+477 The Associate/High School High/Normal Life/Twelfth Night/Trees Lounge
+478 Larger Than Life/Unhook the Stars/Romeo+Juliet/Dear God/Vertigo
+479 Ransom/Set It Off/Mad Dog Time/Mother Night/The Funeral
+480 Space Jam/The Mirror Has Two Faces/The English Patient/Breaking the Waves
+481 Star Trek: First Contact/Shine/Jingle All the Way/Sling Blade/Microcosmos
+482 101 Dalmatians/Hype!/The Crucible/Palookaville/Ridicule
+483 Jerry Maguire/Daylight/Everyone Says I Love You
+484 Mars Attacks!/Marvin's Room/The Preacher's Wife/Hamlet/Citizen Ruth
+485 Evita/Beavis and Butt-Head Do America/One Fine Day/My Fellow Americans/Scream/Ghosts of Mississippi
+486 Michael/Mother/The People vs. Larry Flynt/The Evening Star/The Portrait of a Lady/I'm Not Rappaport
+487 The Best Films of 1996
+488 The Worst Films of 1996
+489 Memo to the Academy - 1997
+490 Fierce Creatures/Metro/In Love and War/Prefontaine/The Relic
+491 Shadow Conspiracy/Waiting for Guffman/Star Wars: Special Edition/Gridlock'd/Prisoner of the Mountains/Walkabout
+492 Dante's Peak/SubUrbia/The Beautician and the Beast/Rosewood/The Whole Wide World
+493 Absolute Power/That Darn Cat/Fools Rush In/Johns
+494 The Empire Strikes Back: Special Edition/When We Were Kings/Blood & Wine/Lost Highway/Margaret's Museum
+495 Private Parts/Hard Eight/Donnie Brasco/Smilla's Sense of Snow/Booty Call
+496 Jungle 2 Jungle/The Daytrippers/Kama Sutra/Good Luck/Gentlemen Don't Eat Poets
+497 Return of the Jedi: Special Edition/Love Jones/The Godfather/City of Industry/Troublesome Creek/Mandela
+498 Liar Liar/The Graduate/Selena/Crash/Kolya
+499 The Devil's Own/Cats Don't Dance/B*A*P*S/The Sixth Man/The Eighth Day/The Substance of Fire
+500 The Saint/Inventing the Abbotts/Double Team/That Old Feeling/Chasing Amy
+501 Anaconda/Grosse Point Blank/Paradise Road/Keys to Tulsa/Kissed/Mabarosi
+502 Murder at 1600/Traveller/8 Heads in a Duffel Bag/Das Boot/Ulysses Gaze
+503 Volcano/Shiloh/Romy and Michele's High School Reunion/Female Perversions/A Brother's Kiss
+504 Breakdown/Warriors of Virtue/Austin Powers: International Man of Mystery/Truth or Consequences/Commandments
+505 Father's Day/Twin Town/The Fifth Element/Underworld/Children of the Revolution
+506 Night Falls on Manhattan/Rudyard Kipling's the Second Jungle Book/Love! Valour! Compassion!/Sprung/A Chef in Love
+507 Addicted to Love/Gamera: Guardian of the Universe/The Van/Brassed Off
+508 The Lost World: Jurassic Park/'Til There Was You/Trial and Error/Rough Magic
+509 Con Air/Bliss/Buddy/The Pillow Book/The Quiet Room
+510 Speed 2/Broken English/Ulee's Gold/Temptress Moon/Wedding Bell Blues
+511 Batman & Robin/Hercules/My Best Friend's Wedding/For Roseanna/Ponette
+512 Face/Off/Dream with the Fishes/Head Above Water/The Last Time I Committed Suicide/When the Cat's Away
+513 Men in Black/Wild America/Out to Sea
+514 Contact/This World, Then the Fireworks/A Simple Wish/4 Little Girls/The Big Sleep/Shall We Dance?
+515 George of the Jungle/Mrs. Brown/Nothing to Lose/Operation Condor/Contempt
+516 Air Force One/Good Burger/Cafe Society/In the Company of Men/Box of Moonlight
+517 Picture Perfect/Air Bud/Spawn/One Eight Seven/Star Maps
+518 Conspiracy Theory/Kiss Me, Guido/The Full Monty/Career Girls/Love Serenade/Free Willy 3: The Rescue
+519 G.I. Jane/Event Horizon/Cop Land/Pooh's Grand Adventure
+520 Leave It to Beaver/Money Talks/Mimic/Masterminds/Gabbeh
+521 She's So Lovely/Hoodlum/Excess Baggage/Paperback Romance/M/Le Samurai
+522 Fire Down Below/In and Out/Julian Po/Bang
+523 The Game/The End of Violence/L.A. Confidential/The Disappearance of Garcia Lorca
+524 A Thousand Acres/The Myth of Fingerprints/Going All the Way/Waco: The Rules of Engagement/Gravesend/Fire
+525 The Peacemaker/Soul Food/The Edge/The Ice Storm/The Assignment
+526 Kiss the Girls/The Matchmaker/U Turn/The Locusts/Fast, Cheap & Out of Control
+527 Seven Years in Tibet/RocketMan/Boogie Nights/Gang Related/Washington Square
+528 The Devil's Advocate/I Know What You Did Last Summer/Playing God/Telling Lies in America/Eye of God/Year of the Horse
+529 Gattaca/The House of Yes/A Life Less Ordinary/FairyTale: A True Story/Sunday
+530 Red Corner/Critical Care/Switchback/Family Name
+531 Mad City/Bean/Starship Troopers/Eve's Bayou/The Wings of the Dove
+532 The Jackal/Anastasia/The Man Who Knew Too Little/One Night Stand/The Tango Lesson/Kiss or Kill
+533 Midnight in the Garden of Good and Evil/The Sweet Hereafter/John Grisham's the Rainmaker/Deep Crimson
+534 Alien Resurrection/Welcome to Sarajevo/Flubber/Public Housing/Bent
+535 Amistad/Titanic/Good Will Hunting/The Apostle
+536 Wag the Dog/Home Alone 3/For Richer or Poorer/Deconstructing Harry/Scream 2
+537 Tomorrow Never Dies/Mousehunt/As Good as it Gets/Kundun/Oscar and Lucinda
+538 The Postman/Mr. Magoo/Jackie Brown/An American Werewolf in Paris/Afterglow/The Education of Little Tree
+539 The Best Films of 1997
+540 Memo to the Academy - 1998
+541 The Worst Films of 1997
+542 Spice World/Hard Rain/Fallen/The Gingerbread Man/Phantoms/Star Kid
+543 Zero Effect/Deep Rising/Great Expectations/Desperate Measures/Deceiver
+544 Blues Brothers 2000/Illtown/The Replacement Killers
+545 Sphere/The Borrowers/The Wedding Singer
+546 Palmetto/Senseless/Dangerous Beauty/Mrs. Dalloway/Nil by Mouth/Live Flesh
+547 Kissing a Fool/An Alan Smithee Film: Burn Hollywood Burn/Krippendorf's Tribe/The Real Blonde/Dark City/The Long Way Home
+548 U.S. Marshals/Hush/The Big Lebowski/Twilight/Men with Guns
+549 Primary Colors/Love and Death on Long Island/The Man in the Iron Mask/Everest/The Leading Man/Grease
+550 Wild Things/Niagara, Niagara/Mr. Nice Guy/Wide Awake/Fireworks
+551 The Newton Boys/Meet the Deedles/A Price Above Rubies/No Looking Back
+552 Lost in Space/The Spanish Prisoner/Mercury Rising/Kurt & Courtney/Character
+553 My Giant/The Odd Couple II/City of Angels/The Player's Club/The Big One/The Butcher Boy
+554 The Object of My Affection/Paulie/Nightwatch/Suicide Kings/Wild Man Blues/Chinese Box
+555 He Got Game/The Truce/Two Girls and a Guy/Sliding Doors/Deja Vu
+556 Les Miserables/The Big Hit/Wilde/Don't Look Back/Little Dieter Needs to Fly/Junk Mail
+557 Deep Impact/Woo/Clockwatchers/Little Men/Artemisia/In Our Own Hands
+558 Godzilla/Fear and Loathing in Las Vegas/Bulworth/The Horse Whisperer
+559 The Truman Show/The Last Days of Disco/A Perfect Murder/The Opposite of Sex/Hope Floats
+560 Six Days, Seven Nights/Can't Hardly Wait/Cousin Bette/Mr. Jealousy/High Art
+561 The X-Files: Fight the Future/The Land Girls/Mulan/Off the Menu: The Last Days of Chasen's/Beyond Silence
+562 Out of Sight/Smoke Signals/Doctor Dolittle/Picnic at Hanging Rock/Insomnia
+563 Armageddon/Henry Fool/Gone with the Wind/Buffalo '66/Passion in the Desert/Nights of Cabiria
+564 Lethal Weapon 4/Whatever/Small Soldiers/Madeline/Pi
+565 The Mask of Zorro/Polish Wedding/There's Something About Mary/Lolita/Poodle Springs
+566 Saving Private Ryan/The Parent Trap/Mafia!/Disturbing Behavior
+567 The Negotiator/The Governess/EverAfter/BASEketball/The Thief
+568 How Stella Got Her Groove Back/Return to Paradise/Snake Eyes/The Rat Pack/Full Tilt Boogie
+569 Jim Carrey: Class Clown
+570 Why Do Fools Fall in Love/A Merry War/Your Friends and Neighbors/Dance with Me/Blade
+571 Breakout Stars
+572 Rounders/Kiki's Delivery Service/Simon Birch/Slums of Beverly Hills/Digging to China
+573 One True Thing/Rush Hour/A Soldier's Daughter Never Cries/Permanent Midnight/Touch of Evil/Chicago Cab
+574 Ronin/Pecker/Clay Pigeons/Urban Legend/Shadrach
+575 What Dreams May Come/A Night at the Roxbury/Snitch/Antz
+576 Holy Man/Bad Manners/One Tough Cop/The Mighty/The Imposter
+577 Beloved/Happiness/Practical Magic/Love Is the Devil/The Cruise
+578 Pleasantville/The Alarmist/The Lion King II: Simba's Pride/Apt Pupil/Life is Beautiful
+579 Living Out Loud/Unmade Beds/American History X/John Carpenter's Vampires/The Celebration
+580 The Siege/Elizabeth/Gods and Monsters/The Waterboy/The Wizard of Oz
+581 Meet Joe Black/I'll Be Home for Christmas/Dancing at Lughnasa/I Still Know What You Did Last Summer/Velvet Goldmine
+582 Enemy of the State/Waking Ned Divine/A Bug's Life/Celebrity/The Rugrats Movie
+583 Babe: Pig in the City/Home Fries/Ringmaster/Very Bad Things/Savior
+584 The Prince of Egypt/Shattered Image/Little Voice/A Simple Plan/Central Station
+585 Star Trek: Insurrection/Jack Frost/Shakespeare in Love/Psycho/The General
+586 You've Got Mail/Down in the Delta/The Thin Red Line/A Civil Action/Affliction
+587 Stepmom/Hilary and Jackie/Mighty Joe Young/Patch Adams/Hurlyburly
+588 The Best Films of 1998
+589 Memo to the Academy - 1999
+590 The Worst Films of 1998
+591 At First Sight/Another Day in Paradise/Hi-Lo Country/Playing by Heart/The Theory of Flight

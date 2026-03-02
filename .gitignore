@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Selenium logs
+geckodriver.log
+chromedriver.log
+
+# Generated artifacts (Optional: keep if you want to track the output)
+# semantic_matches.html
