@@ -2,6 +2,11 @@
 
 This project scrapes and reconciles episode lists of "Siskel & Ebert" (and related shows) from various sources (Web, YouTube, TVDB) to find matches, identify incomplete episodes, and generate statistics.
 
+## Data Sources
+
+- **YouTube Channel**: [The Misadventures of Siskel & Ebert](https://www.youtube.com/@TheMisadventuresofSiskelEbert/videos)
+- **Website**: [Siskel & Ebert.org](https://siskelebert.org/)
+
 ## Project Structure
 
 - `main.py`: The entry point of the application.
