@@ -3,7 +3,7 @@ from collections import defaultdict
 import numpy as np
 from modules.preprocessing import clean_title, total_movies
 
-def stats(results, web_videos, roeper=False):
+def stats(results, web_videos):
     def count_year(results):
         year_counts = defaultdict(int)      # total entradas asignadas por año (títulos)
         movie_counts = defaultdict(int)     # total películas (puede haber varios por entrada)
@@ -81,9 +81,6 @@ def stats(results, web_videos, roeper=False):
         )
         total = total_movies(web_videos)
         print(f"\n📊 Estimated Completion Rate: {matched_titles} / {total} = {matched_titles / total:.2%}")
-
-    if roeper:
-        return
 
     # Llamadas principales
     count_year(results)
