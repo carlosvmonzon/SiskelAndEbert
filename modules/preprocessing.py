@@ -58,44 +58,44 @@ def total_movies(web_videos, header=False):
         total += len(movies)
     return total
 
-def compare_titles(web_videos, txt_names, youtube_videos=None):
+def compare_titles(primary_episode_list, website_episode_list, youtube_episode_list=None):
     results = []
     
     # Pre-process data once to avoid re-cleaning in the loop
-    txt_processed = [(line, clean_title(line, header=False)) for line in txt_names]
-    yt_processed = [(line, clean_title(line, header=True)) for line in youtube_videos] if youtube_videos else None
+    website_processed = [(line, clean_title(line, header=False)) for line in website_episode_list]
+    yt_processed = [(line, clean_title(line, header=True)) for line in youtube_episode_list] if youtube_episode_list else None
 
-    for web_episode in web_videos:
-        if not re.search(r'[^0-9]/[^0-9]', web_episode):
+    for primary_episode in primary_episode_list:
+        if not re.search(r'[^0-9]/[^0-9]', primary_episode):
             continue
 
-        web_cleaned = clean_title(web_episode, header=False)
+        primary_cleaned = clean_title(primary_episode, header=False)
 
-        match_web, inc_web = find_match(web_cleaned, txt_processed)
+        match_web, inc_web = find_match(primary_cleaned, website_processed)
 
-        if youtube_videos is not None:
-            match_yt, inc_yt = find_match(web_cleaned, yt_processed)
+        if youtube_episode_list is not None:
+            match_yt, inc_yt = find_match(primary_cleaned, yt_processed)
 
             if match_yt and match_web:
                 inc = inc_yt and inc_web  # Incomplete only if both are incomplete
                 if not inc:
                     match = match_yt if not inc_yt else match_web
                 else:
-                    match = match_yt  # Default to youtube if both incomplete
+                    match = match_yt  # Default to YouTube if both incomplete
                 source = "both"
             elif match_yt:
                 match, inc, source = match_yt, inc_yt, "youtube"
             elif match_web:
                 match, inc, source = match_web, inc_web, "web"
             else:
-                match, inc, source = None, is_incomplete(web_episode), "none"
+                match, inc, source = None, is_incomplete(primary_episode), "none"
         else:
             if match_web:
                 match, inc, source = match_web, inc_web, "web"
             else:
-                match, inc, source = None, is_incomplete(web_episode), "none"
+                match, inc, source = None, is_incomplete(primary_episode), "none"
 
         status = "match" if match else "no-match"
-        results.append((web_episode, match, status, source, inc))
+        results.append((primary_episode, match, status, source, inc))
 
     return results

@@ -5,51 +5,51 @@ from modules.preprocessing import clean_title, total_movies
 
 def stats(results, web_videos):
     def count_year(results):
-        year_counts = defaultdict(int)      # total entradas asignadas por año (títulos)
-        movie_counts = defaultdict(int)     # total películas (puede haber varios por entrada)
-        unmatched_counts = defaultdict(int) # número de EPISODIOS sin match por año (1 por entrada no-match)
+        year_counts = defaultdict(int)      # total entries assigned per year (titles)
+        movie_counts = defaultdict(int)     # total movies (can be multiple per entry)
+        unmatched_counts = defaultdict(int) # number of EPISODES without match per year (1 per no-match entry)
         year_pattern = re.compile(r"\((\d{4})\)(?!/)")
 
         current_year = None
-        pending_entries = []  # guardamos tuplas (original_title, status)
+        pending_entries = []  # store tuples (original_title, status)
 
         for original_title, matched_title, status, _, _ in results:
-            # Si encontramos un título "match" que contenga año, actualizamos current_year
+            # If we find a "match" title containing a year, update current_year
             if status == "match" and matched_title:
                 match = year_pattern.search(matched_title)
                 if match:
                     detected_year = match.group(1)
 
-                    # Si no había año previo, asignamos los pendientes al año anterior
+                    # If there was no previous year, assign pending entries to the previous year
                     if current_year is None:
                         prev_year = str(int(detected_year) - 1)
                         for pending_title, pending_status in pending_entries:
                             year_counts[prev_year] += 1
                             movie_counts[prev_year] += len(clean_title(pending_title, header=False))
-                            # Ahora sumamos 1 por episodio si no es match
+                            # Now add 1 per episode if it's not a match
                             if pending_status != "match":
                                 unmatched_counts[prev_year] += 1
                         pending_entries.clear()
 
                     current_year = detected_year
 
-            # Si aún no hemos detectado ningún año, acumulamos en pendientes (guardando status)
+            # If we haven't detected any year yet, accumulate in pending (saving status)
             if current_year is None:
                 pending_entries.append((original_title, status))
             else:
-                # Asignamos la entrada al current_year
+                # Assign the entry to current_year
                 year_counts[current_year] += 1
                 movie_counts[current_year] += len(clean_title(original_title, header=False))
-                # Si la entrada no tiene match, contamos 1 episodio sin match
+                # If the entry has no match, count 1 episode without match
                 if status != "match":
                     unmatched_counts[current_year] += 1
 
-        # Si al final no se detectó ningún año en ningún match, mantenemos el error original
+        # If no year was detected in any match by the end, keep the original error
         if current_year is None:
             raise ValueError("❌ No year found in any matched title. Cannot assign years.")
 
-        # Imprimimos por año: totales y no-match (1 por episodio)
-        print("\n📅 Películas por año (entradas / películas / episodios sin match):")
+        # Print by year: totals and no-match (1 per episode)
+        print("\n📅 Movies per year (entries / movies / episodes without match):")
         for year in sorted(year_counts):
             total_entries = year_counts[year]
             total_movies_year = movie_counts[year]
@@ -82,7 +82,7 @@ def stats(results, web_videos):
         total = total_movies(web_videos)
         print(f"\n📊 Estimated Completion Rate: {matched_titles} / {total} = {matched_titles / total:.2%}")
 
-    # Llamadas principales
+    # Main calls
     count_year(results)
     match_summary(results)
     completion_rate(results)

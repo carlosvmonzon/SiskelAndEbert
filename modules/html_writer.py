@@ -16,11 +16,11 @@ def write_html(results):
     
     html_content = """
     <!DOCTYPE html>
-    <html lang="es">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resultados de Coincidencias</title>
+        <title>Match Results</title>
         <style>
             body { font-family: Arial, sans-serif; }
             .match { color: green; font-weight: bold; }
@@ -41,7 +41,7 @@ def write_html(results):
         </script>
     </head>
     <body>
-        <h2>Resultados de Coincidencias</h2>
+        <h2>Match Results</h2>
         <ul>
     """
     for web_episode, video_match, match_type, source, _ in results:

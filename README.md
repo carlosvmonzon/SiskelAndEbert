@@ -5,13 +5,13 @@ This project scrapes and reconciles episode lists of "Siskel & Ebert" (and relat
 ## Data Sources
 
 - **YouTube Channel**: [The Misadventures of Siskel & Ebert](https://www.youtube.com/@TheMisadventuresofSiskelEbert/videos)
-- **Website**: [Siskel & Ebert.org](https://siskelebert.org/) (Note: Site is currently down, but data is archived in `data/nombres_web.txt`)
+- **Website**: Siskel & Ebert.org (Note: Site is currently down, but data is archived in `data/archived_website_episodes.txt`)
 
 ## Project Structure
 
 - `main.py`: The entry point of the application.
 - `modules/`: Contains the scraping, processing, and reporting logic.
-- `data/`: Stores the scraped text data.
+- `data/`: Stores the scraped text data from TVDB (`tvdb_episodes.txt`), YouTube (`videos_youtube.txt`), and an archived version of the `siskelebert.org` site (`archived_website_episodes.txt`).
 
 ## Installation
 

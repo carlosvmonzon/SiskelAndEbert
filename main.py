@@ -8,8 +8,8 @@ from modules.stats import stats
 update = input('Do you want to update the data files? (Y/n): ').strip().lower()
 if update in ('y', ''):
     print("🔄 Creating data files...")
-    """ selector: 158, 157, 162, 7799"""
-    #update_review_site_data() # The site is down by now, but the data was archived in data/nombres_web.txt
+    """ selector: 158, 157, 162, 7799""" 
+    #update_review_site_data() # The site is down by now, but the data was archived in data/archived_website_episodes.txt
     """ sneak-previews,
     at-the-movies-1982
     siskel-and-ebert-at-the-movies (this and next)
@@ -19,13 +19,13 @@ if update in ('y', ''):
     update_youtube_data()
     
 
-web_videos, youtube_videos, txt_names = open_files("data/videos_web.txt", 
-                                                    "data/videos_youtube.txt", 
-                                                    "data/nombres_web.txt")
+tvdb_episodes, youtube_videos, website_episodes = open_files("data/tvdb_episodes.txt",
+                                                               "data/videos_youtube.txt",
+                                                               "data/archived_website_episodes.txt")
 
 
-results = compare_titles(web_videos, txt_names, youtube_videos)
+results = compare_titles(tvdb_episodes, website_episodes, youtube_videos)
 
 html = write_html(results)
 
-stats(results, web_videos)
+stats(results, tvdb_episodes)

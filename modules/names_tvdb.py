@@ -2,32 +2,32 @@ import requests, re
 import os
 from bs4 import BeautifulSoup
                 
-def obtener_episodios_tvdb(url):
+def get_tvdb_episodes(url):
     
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
     
-    # Extraer los títulos de los episodios, eliminando la referencia de temporada/episodio (como S01E01)
-    episodios = []
+    # Extract episode titles, removing the season/episode reference (like S01E01)
+    episodes = []
     
-    # Aquí extraemos todos los <a> dentro de <li> con las clases que contienen los títulos de los episodios
-    for i, episode in enumerate(soup.find_all("li", class_="list-group-item"), start=1):
+    # Here we extract all <a> tags within <li> with classes containing episode titles
+    for i, episode_li in enumerate(soup.find_all("li", class_="list-group-item"), start=1):
         if i>591:
             continue      
-        title_tag = episode.find("a")
+        title_tag = episode_li.find("a")
         if title_tag:
-            titulo_completo = title_tag.get_text(strip=True)  # Título completo con la referencia de temporada/episodio
-            titulo_limpio = re.sub(r'S\d{2}E\d{2}', '', titulo_completo).strip()  # Eliminamos la referencia como S01E01
-            episodios.append(str(i) + ' ' + titulo_limpio)
+            full_title = title_tag.get_text(strip=True)  # Full title with season/episode reference
+            clean_title = re.sub(r'S\d{2}E\d{2}', '', full_title).strip()  # Remove reference like S01E01
+            episodes.append(str(i) + ' ' + clean_title)
        
 
-    return episodios
+    return episodes
 
-def create_data(url_snippet="siskel-and-ebert-at-the-movies", output_path="data/videos_web.txt"):
-    # Obtener los títulos de los episodios de TVDB
+def create_data(url_snippet="siskel-and-ebert-at-the-movies", output_path="data/tvdb_episodes.txt"):
+    # Get episode titles from TVDB
     url = f"https://thetvdb.com/series/{url_snippet}/allseasons/official"
-    videos_web = obtener_episodios_tvdb(url)
+    tvdb_episodes = get_tvdb_episodes(url)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
-        for video in videos_web:
+        for video in tvdb_episodes:
             f.write(video + "\n")

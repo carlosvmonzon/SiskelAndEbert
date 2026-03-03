@@ -2,29 +2,29 @@ import yt_dlp
 import time
 import os
 
-def obtener_titulos_videos(channel_url, delay=2):
+def get_video_titles(channel_url, delay=2):
      
-    """Obtiene todos los títulos de videos de un canal de YouTube, con un pequeño retraso opcional."""
-    opciones = {
+    """Gets all video titles from a YouTube channel, with an optional small delay."""
+    options = {
         'quiet': True,
         'extract_flat': 'in_playlist',
     }
 
-    with yt_dlp.YoutubeDL(opciones) as ydl:
+    with yt_dlp.YoutubeDL(options) as ydl:
         info = ydl.extract_info(channel_url, download=False)
-        time.sleep(delay)  # Espera luego de la extracción
-        titulos = [video['title'] for video in info.get('entries', [])]
-        return sorted(titulos)
+        time.sleep(delay)  # Wait after extraction
+        titles = [video['title'] for video in info.get('entries', [])]
+        return sorted(titles)
 
-def guardar_titulos_en_archivo(titulos, ruta_archivo):
-    os.makedirs(os.path.dirname(ruta_archivo), exist_ok=True)
-    with open(ruta_archivo, 'w', encoding='utf-8') as archivo:
-        archivo.writelines(f"{titulo}\n" for titulo in titulos)
+def save_titles_to_file(titles, file_path):
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(f"{title}\n" for title in titles)
 
 def create_data(channel_url = 'https://www.youtube.com/@TheMisadventuresofSiskelEbert/videos',
-                salida='data/videos_youtube.txt'):
-    titulos = obtener_titulos_videos(channel_url)
-    guardar_titulos_en_archivo(titulos, salida)
+                output_path='data/videos_youtube.txt'):
+    titles = get_video_titles(channel_url)
+    save_titles_to_file(titles, output_path)
 
 if __name__ == '__main__':
     url = 'https://www.youtube.com/@TheMisadventuresofSiskelEbert/videos'

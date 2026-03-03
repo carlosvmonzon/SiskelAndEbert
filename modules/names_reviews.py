@@ -3,63 +3,63 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
-def create_data(selector=612, output_path='data/nombres_web.txt'):
-    # Configura el WebDriver (en este caso, con Chrome)
-    driver = webdriver.Chrome()  # Asegúrate de que la ruta sea correcta
+def create_data(selector=612, output_path='data/archived_website_episodes.txt'):
+    # Set up the WebDriver (in this case, with Chrome)
+    driver = webdriver.Chrome()  # Make sure the path is correct
 
-    # Carga la página web
+    # Load the web page
     driver.get('https://siskelebert.org/')
 
-    # Espera a que la página cargue completamente
+    # Wait for the page to load completely
     time.sleep(2)
 
-    # Encuentra el elemento que activa el submenú de "Disney Years"
+    # Find the element that activates the "Disney Years" submenu
     submenu_toggle = driver.find_element(By.CSS_SELECTOR, f"#menu-item-{selector} .cm-submenu-toggle")
 
-    # Haz clic en el botón de submenú para desplegar la lista
+    # Click the submenu button to expand the list
     submenu_toggle.click()
 
-    # Espera a que el submenú se despliegue
+    # Wait for the submenu to expand
     time.sleep(1)
 
-    # Encuentra todos los enlaces dentro del submenú
-    enlaces = driver.find_elements(By.CSS_SELECTOR, f'#menu-item-{selector} .sub-menu li a')
+    # Find all links within the submenu
+    links = driver.find_elements(By.CSS_SELECTOR, f'#menu-item-{selector} .sub-menu li a')
 
-    # Abrimos el archivo en modo escritura
+    # Open the file in write mode
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as file:
-        # Itera sobre cada enlace y visita la página correspondiente
-        for enlace in enlaces:
-            url = enlace.get_attribute('href')
-            print(f"Visitando la página: {url}")
+        # Iterate over each link and visit the corresponding page
+        for link in links:
+            url = link.get_attribute('href')
+            print(f"Visiting page: {url}")
             
-            # Abre el enlace
+            # Open the link
             driver.get(url)
             
-            # Espera a que la página cargue
+            # Wait for the page to load
             time.sleep(2)
             
             try:
-                # Encuentra el contenedor que contiene los nombres, que tiene la clase 'elementor-widget-container'
-                contenedores = driver.find_elements(By.CSS_SELECTOR, '.elementor-widget-container p')
+                # Find the container that holds the names, which has the class 'elementor-widget-container'
+                containers = driver.find_elements(By.CSS_SELECTOR, '.elementor-widget-container p')
                 
-                # Itera sobre cada contenedor y extrae el texto
-                for contenedor in contenedores:
-                    nombre = contenedor.text.strip()
-                    if nombre:  # Asegúrate de que el texto no esté vacío
-                        # Reemplaza las comas por barras
-                        nombre_modificado = nombre.replace(',', '/')
-                        # Escribe el nombre en el archivo
-                        file.write(nombre_modificado + '\n')
+                # Iterate over each container and extract the text
+                for container in containers:
+                    name = container.text.strip()
+                    if name:  # Make sure the text is not empty
+                        # Replace commas with slashes
+                        modified_name = name.replace(',', '/')
+                        # Write the name to the file
+                        file.write(modified_name + '\n')
             
             except Exception as e:
-                print(f"Error al obtener los nombres en {url}: {e}")
+                print(f"Error getting names from {url}: {e}")
             
-            # Regresa a la página principal después de procesar cada enlace
+            # Go back to the main page after processing each link
             driver.back()
             
-            # Espera un poco antes de pasar al siguiente enlace
+            # Wait a bit before moving to the next link
             time.sleep(1)
 
-    # Cierra el navegador
+    # Close the browser
     driver.quit()
