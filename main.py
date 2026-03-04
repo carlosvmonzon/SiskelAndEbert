@@ -14,7 +14,7 @@ if update in ('y', ''):
     at-the-movies-1982
     siskel-and-ebert-at-the-movies (this and next)
     """ 
-    update_tvdb_data()
+    update_tvdb_data(min_i=592, max_i=None)
     
     update_youtube_data()
     
@@ -24,8 +24,8 @@ tvdb_episodes, youtube_videos, website_episodes = open_files("data/tvdb_episodes
                                                                "data/archived_website_episodes.txt")
 
 
-results = compare_titles(tvdb_episodes, website_episodes, youtube_videos)
+results = compare_titles(tvdb_episodes, website_episodes, youtube_videos, roeper=True)
 
-html = write_html(results)
+html = write_html(results, roeper=True)
 
 stats(results, tvdb_episodes)

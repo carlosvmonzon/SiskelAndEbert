@@ -97,7 +97,7 @@ def total_movies(web_videos, header=False):
         total += len(movies)
     return total
 
-def compare_titles(primary_episode_list, website_episode_list, youtube_episode_list=None):
+def compare_titles(primary_episode_list, website_episode_list, youtube_episode_list=None, roeper=False):
     """
     Reconciles the primary episode list (TVDB) with website and YouTube lists.
     
@@ -105,6 +105,7 @@ def compare_titles(primary_episode_list, website_episode_list, youtube_episode_l
         primary_episode_list (list): The main list of episodes (e.g., from TVDB).
         website_episode_list (list): List of episodes from the website archive.
         youtube_episode_list (list, optional): List of episodes from YouTube.
+        roeper (bool): If True, compares only TVDB with YouTube (ignoring website).
         
     Returns:
         list: A list of tuples containing match results and metadata.
@@ -112,7 +113,11 @@ def compare_titles(primary_episode_list, website_episode_list, youtube_episode_l
     results = []
     
     # Pre-process data once to avoid re-cleaning in the loop
-    website_processed = [(line, clean_title(line, header=False)) for line in website_episode_list]
+    if not roeper and website_episode_list:
+        website_processed = [(line, clean_title(line, header=False)) for line in website_episode_list]
+    else:
+        website_processed = []
+
     yt_processed = [(line, clean_title(line, header=True)) for line in youtube_episode_list] if youtube_episode_list else None
 
     for primary_episode in primary_episode_list:
@@ -123,7 +128,10 @@ def compare_titles(primary_episode_list, website_episode_list, youtube_episode_l
         primary_cleaned = clean_title(primary_episode, header=False)
 
         # Attempt to find match in website data
-        match_web, inc_web = find_match(primary_cleaned, website_processed)
+        if not roeper:
+            match_web, inc_web = find_match(primary_cleaned, website_processed)
+        else:
+            match_web, inc_web = None, None
 
         if youtube_episode_list is not None:
             # Attempt to find match in YouTube data
