@@ -23,7 +23,6 @@ tvdb_episodes, youtube_videos, website_episodes = open_files("data/tvdb_episodes
                                                                "data/videos_youtube.txt",
                                                                "data/archived_website_episodes.txt")
 
-
 results = compare_titles(tvdb_episodes, website_episodes, youtube_videos, roeper=False)
 
 html = write_html(results, roeper=False)
