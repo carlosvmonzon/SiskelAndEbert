@@ -15,14 +15,14 @@ siskel-and-ebert-at-the-movies (this and next)
 # --- CONFIGURATION ---
 # Set to True to run for Ebert & Roeper, False for Siskel & Ebert.
 # This flag controls which data files are used and generated.
-ROEPER_MODE = False
+ROEPER_MODE = True
 # --- END CONFIGURATION ---
 
 # Set parameters based on the mode
 if ROEPER_MODE:
     print("Running in Ebert & Roeper mode.")
     # Parameters for scraping Ebert & Roeper episodes from TVDB
-    tvdb_update_params = {'min_i': 592, 'max_i': None, 'output_path': 'data/tvdb_roeper_episodes.txt'}
+    tvdb_update_params = {'min_i': 592, 'max_i': 919, 'output_path': 'data/tvdb_roeper_episodes.txt'}
     tvdb_filepath = 'data/tvdb_roeper_episodes.txt'
     website_filepath = None  # No archived website data for the Roeper era
 else:
