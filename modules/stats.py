@@ -22,7 +22,6 @@ def count_year(results, web_videos):
             match = year_pattern.search(matched_title)
             if match:
                 detected_year = match.group(1)
-                
                 # If this is the first year detected, assign all pending entries to this same year.
                 # This handles the start of the list where year info might be missing until a match occurs.
                 if current_year is None:
