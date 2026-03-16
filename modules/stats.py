@@ -23,16 +23,15 @@ def count_year(results, web_videos):
             if match:
                 detected_year = match.group(1)
                 
-                # If this is the first year detected, assume all pending entries belong to the previous year.
+                # If this is the first year detected, assign all pending entries to this same year.
                 # This handles the start of the list where year info might be missing until a match occurs.
                 if current_year is None:
-                    prev_year = str(int(detected_year) - 1)
                     for pending_title, pending_status in pending_entries:
-                        year_counts[prev_year] += 1
-                        movie_counts[prev_year] += len(clean_title(pending_title, header=False))
+                        year_counts[detected_year] += 1
+                        movie_counts[detected_year] += len(clean_title(pending_title, header=False))
                         # Now add 1 per episode if it's not a match
                         if pending_status != "match":
-                            unmatched_counts[prev_year] += 1
+                            unmatched_counts[detected_year] += 1
                     pending_entries.clear()
 
                 current_year = detected_year

@@ -64,7 +64,6 @@ def clean_title(title, header=False, roeper=False):
 
     return movies
 
-
 def compare_lists(list_web, list_yt):
     """
     Calculates the number of fuzzy matches between two lists of movie titles.
@@ -75,10 +74,8 @@ def compare_lists(list_web, list_yt):
         for pw in list_web
     )
 
-
 def is_incomplete(title):
     return "incomplete" in title.lower()
-
 
 def find_match(web_episode_cleaned, source_list_processed):
     """
@@ -92,7 +89,6 @@ def find_match(web_episode_cleaned, source_list_processed):
 
     return None, None
 
-
 def total_movies(web_videos, header=False, roeper=False):
     """
     Counts the total number of individual movies across a list of episode strings.
@@ -105,7 +101,6 @@ def total_movies(web_videos, header=False, roeper=False):
         total += len(movies)
 
     return total
-
 
 def compare_titles(primary_episode_list,
                    website_episode_list,

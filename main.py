@@ -22,7 +22,7 @@ ROEPER_MODE = True
 if ROEPER_MODE:
     print("Running in Ebert & Roeper mode.")
     # Parameters for scraping Ebert & Roeper episodes from TVDB
-    tvdb_update_params = {'min_i': 592, 'max_i': 919, 'output_path': 'data/tvdb_roeper_episodes.txt'}
+    tvdb_update_params = {'min_i': 593, 'max_i': 919, 'output_path': 'data/tvdb_roeper_episodes.txt'}
     tvdb_filepath = 'data/tvdb_roeper_episodes.txt'
     website_filepath = None  # No archived website data for the Roeper era
 else:
