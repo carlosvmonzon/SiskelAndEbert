@@ -26,11 +26,13 @@ def clean_title(title, header=False, roeper=False):
     """
 
     if header:
-        if roeper:
-            title = re.sub(r"(Ebert\s*&\s*Roeper\s*\(\d{4}\)\s*-\s*)", "", title)
-        else:
-            title = re.sub(r"(Siskel\s*&\s*Ebert\s*\(\d{4}\)\s*-\s*)", "", title)
-
+        # The YouTube channel uses different naming conventions that don't always
+        # align with the Siskel/Roeper eras. For example, 1999 episodes are
+        # sometimes titled "Siskel & Ebert". This regex handles multiple known
+        # prefixes and is case-insensitive to handle typos like "SIskel".
+        title = re.sub(
+            r"((Siskel\s*&\s*Ebert|Ebert\s*&\s*Roeper|Roger Ebert & The Movies)\s*\(\d{4}\)\s*-\s*)",
+            "", title, flags=re.IGNORECASE)
         # Remove leading numbers often present in YouTube titles
         title = re.sub(r"^\d+\s*", "", title)
 
