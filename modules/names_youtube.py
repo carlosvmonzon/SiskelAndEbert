@@ -1,6 +1,7 @@
 import yt_dlp
 import time
 import os
+import unicodedata
 
 def get_video_titles(channel_url, delay=2):
      
@@ -15,6 +16,27 @@ def get_video_titles(channel_url, delay=2):
         time.sleep(delay)  # Wait after extraction
         titles = [video['title'] for video in info.get('entries', [])]
         return sorted(titles)
+
+def search_youtube(query, delay=1):
+    """Searches YouTube for a query and returns the first video title found."""
+
+    # Normalize query to remove accents (e.g., Pokémon -> Pokemon)
+    query = ''.join(c for c in unicodedata.normalize('NFD', query) if unicodedata.category(c) != 'Mn')
+
+    options = {
+        'quiet': True,
+        'extract_flat': True,
+        'noplaylist': True,
+    }
+    with yt_dlp.YoutubeDL(options) as ydl:
+        try:
+            info = ydl.extract_info(f"ytsearch1:{query}", download=False)
+            time.sleep(delay)
+            if 'entries' in info and info['entries']:
+                return info['entries'][0]['title']
+        except Exception as e:
+            print(f"⚠️ Error searching YouTube: {e}")
+    return None
 
 def save_titles_to_file(titles, file_path):
     os.makedirs(os.path.dirname(file_path), exist_ok=True)

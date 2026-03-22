@@ -15,7 +15,8 @@ siskel-and-ebert-at-the-movies (this and next)
 # --- CONFIGURATION ---
 # Set to True to run for Ebert & Roeper, False for Siskel & Ebert.
 # This flag controls which data files are used and generated.
-ROEPER_MODE = True
+mode_input = input("Run in Ebert & Roeper mode? (y/N): ").strip().lower()
+ROEPER_MODE = mode_input == 'y'
 # --- END CONFIGURATION ---
 
 # Set parameters based on the mode
