@@ -3,8 +3,10 @@ import os
 from bs4 import BeautifulSoup
                 
 def get_tvdb_episodes(url, min_i, max_i):
-    
-    response = requests.get(url)
+
+    headers = {"User-Agent": "Mozilla/5.0"}
+    response = requests.get(url, headers=headers, timeout=15)
+    response.raise_for_status()
     soup = BeautifulSoup(response.content, "html.parser")
     
     # Extract episode titles, removing the season/episode reference (like S01E01)

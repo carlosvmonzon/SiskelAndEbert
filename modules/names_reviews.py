@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
+# NOTE: siskelebert.org is currently down. This scraper is kept for reference
+# only; the data it used to produce is archived in data/archived_website_episodes.txt.
 def create_data(selector=612, output_path='data/archived_website_episodes.txt'):
     # Set up the WebDriver (in this case, with Chrome)
     driver = webdriver.Chrome()  # Make sure the path is correct

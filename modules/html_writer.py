@@ -46,27 +46,29 @@ def write_html(results, roeper=False):
         <h2>Match Results</h2>
         <ul>
     """
+    list_items = []
     for i, (web_episode, video_match, match_type, source, _) in enumerate(results, start=1):
         symbol = get_symbol(source)
         css_class, checked = get_class_and_checked(match_type, video_match)
         item_id = web_episode.replace(" ", "_")
-        
+
         # Ensure numbering starts at 1 in the HTML output by stripping original number if present
         parts = web_episode.split(" ", 1)
         if len(parts) > 1 and parts[0].isdigit():
             title_text = parts[1]
         else:
             title_text = web_episode
-        
+
         display_title = title_text
         content = f"{display_title} → {video_match}" if match_type == "match" else display_title
-        html_content += f'''
+        list_items.append(f'''
             <li id="{item_id}" class="{css_class}">
                 <input type="checkbox" class="checkbox" {checked} 
                 onclick="toggleMatch(this, this.parentElement)">
                 {content} {symbol}
-            </li>\n'''
+            </li>\n''')
 
+    html_content += "".join(list_items)
     html_content += """
         </ul>
     </body>
