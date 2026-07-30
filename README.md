@@ -4,27 +4,39 @@ This project scrapes and reconciles episode lists for two eras of the famous mov
 1.  **Siskel & Ebert**: The original run with Gene Siskel and Roger Ebert.
 2.  **Ebert & Roeper**: The subsequent run with Roger Ebert and Richard Roeper.
 
-It compares episode data from various sources (TheTVDB, an archived fan site, and a YouTube channel) to find matches, identify incomplete episodes, and generate statistics and HTML reports.
+It compares episode data from various sources (TheTVDB, an archived fan site, a YouTube channel, and a Rumble playlist) to find matches, identify incomplete episodes, and generate statistics and HTML reports.
 
 ## Data Sources
 
 - **YouTube Channel**: [The Misadventures of Siskel & Ebert](https://www.youtube.com/@TheMisadventuresofSiskelEbert/videos)
 - **Website**: siskelebert.org (Note: Site is currently down, but data is archived in `data/archived_website_episodes.txt`)
+- **Rumble Playlist**: [Siskel & Ebert/Roeper/At The Movies](https://rumble.com/playlists/SiDwtb-VFMQ) — used as a last-resort fallback (see below)
+
+## Matching fallback order
+
+For each TVDB episode, a match is looked for in this order:
+1. The archived website list / local YouTube channel data (instant, no network calls).
+2. A live YouTube search by episode title (via `search_youtube` in `names_youtube.py`).
+3. A lookup by exact TVDB air date against the pre-scraped Rumble playlist (`rumble_scraper.py`). Rumble's videos are titled with just a date (e.g. "Siskel & Ebert: 3-28-87"), not the movies reviewed, so this step matches on date rather than title.
+
+Rumble is behind Cloudflare and blocks plain HTTP scraping, so `rumble_scraper.py` uses Selenium (a real browser) to load and scroll the playlist once; the result is cached in `data/rumble_episodes.txt` and reused across runs instead of being re-scraped per episode.
 
 ## Project Structure
 
 - `main.py`: The entry point of the application.
 - `modules/`: Contains the scraping, processing, and reporting logic.
-  - `names_tvdb.py`: Scrapes episode lists from TheTVDB.
-  - `names_youtube.py`: Scrapes video titles from the YouTube channel.
+  - `names_tvdb.py`: Scrapes episode lists (and air dates) from TheTVDB.
+  - `names_youtube.py`: Scrapes video titles from the YouTube channel and searches YouTube for individual episodes.
+  - `rumble_scraper.py`: Scrapes the Rumble playlist (via Selenium) into a date → URL lookup, used as a fallback when an episode isn't found on YouTube.
   - `preprocessing.py`: Cleans titles and compares lists to find matches.
   - `html_writer.py`: Generates an HTML report of the match results.
   - `stats.py`: Calculates and prints statistics about the matches.
 - `data/`: Stores the scraped text data.
-  - `tvdb_episodes.txt`: The Siskel & Ebert episode list from TheTVDB.
-  - `tvdb_roeper_episodes.txt`: The Ebert & Roeper episode list from TheTVDB.
+  - `tvdb_episodes.txt` / `tvdb_roeper_episodes.txt`: The episode lists from TheTVDB.
+  - `tvdb_episodes_dates.txt` / `tvdb_roeper_episodes_dates.txt`: The matching air dates for each line in the files above.
   - `videos_youtube.txt`: Video titles from the YouTube channel.
   - `archived_website_episodes.txt`: An archived list from the `siskelebert.org` fan site.
+  - `rumble_episodes.txt`: `date\turl` pairs scraped from the Rumble playlist.
 
 ## Installation
 

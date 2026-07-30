@@ -1,6 +1,7 @@
 from modules.names_reviews import create_data as update_review_site_data
 from modules.names_tvdb import create_data as update_tvdb_data
 from modules.names_youtube import create_data as update_youtube_data
+from modules.rumble_scraper import create_data as update_rumble_data, load_rumble_dates
 from modules.preprocessing import open_files, compare_titles
 from modules.html_writer import write_html
 from modules.stats import stats
@@ -25,6 +26,7 @@ if ROEPER_MODE:
     # Parameters for scraping Ebert & Roeper episodes from TVDB
     tvdb_update_params = {'min_i': 593, 'max_i': 919, 'output_path': 'data/tvdb_roeper_episodes.txt'}
     tvdb_filepath = 'data/tvdb_roeper_episodes.txt'
+    tvdb_dates_filepath = 'data/tvdb_roeper_episodes_dates.txt'
     website_filepath = None  # No archived website data for the Roeper era
 else:
     print("Running in Siskel & Ebert mode.")
@@ -32,7 +34,10 @@ else:
     # Assuming default min/max parameters for update_tvdb_data are for Siskel & Ebert
     tvdb_update_params = {'output_path': 'data/tvdb_episodes.txt'}
     tvdb_filepath = 'data/tvdb_episodes.txt'
+    tvdb_dates_filepath = 'data/tvdb_episodes_dates.txt'
     website_filepath = 'data/archived_website_episodes.txt'
+
+rumble_filepath = 'data/rumble_episodes.txt'
 
 update = input('Do you want to update the data files? (Y/n): ').strip().lower()
 if update in ('y', ''):
@@ -48,6 +53,11 @@ if update in ('y', ''):
     print("Updating YouTube video titles...")
     update_youtube_data()
 
+    # Rumble data is the same for both modes; this scrolls the full playlist with a
+    # real browser (Rumble blocks plain HTTP requests), so it takes a couple of minutes.
+    print("Updating Rumble episode dates...")
+    update_rumble_data(output_path=rumble_filepath)
+
 # Load data files for the selected mode
 print(f"Loading data from '{tvdb_filepath}'...")
 if website_filepath:
@@ -59,8 +69,13 @@ else:
     tvdb_episodes, youtube_videos = loaded_data
     website_episodes = None
 
+# Air dates (fallback search key) and the pre-scraped Rumble playlist (fallback source)
+(tvdb_dates,) = open_files(tvdb_dates_filepath)
+rumble_dates = load_rumble_dates(rumble_filepath)
+
 print("Comparing episode lists...")
-results = compare_titles(tvdb_episodes, website_episodes, youtube_videos, roeper=ROEPER_MODE)
+results = compare_titles(tvdb_episodes, website_episodes, youtube_videos, roeper=ROEPER_MODE,
+                          episode_dates=tvdb_dates, rumble_dates=rumble_dates)
 
 print("Generating HTML report...")
 write_html(results, roeper=ROEPER_MODE)

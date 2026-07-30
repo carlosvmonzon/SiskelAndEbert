@@ -2,11 +2,12 @@ from modules.preprocessing import is_incomplete
 
 def write_html(results, roeper=False):
     def get_symbol(source):
-        if roeper:
-            return "✅" if source == "youtube" else "❌"
+        # Roeper mode never produces "web"/"both" (no archived website source for that
+        # era), so it naturally only ever hits "youtube"/"rumble"/"none" here too.
         return {
             "youtube": "📺",
             "web": "🌐",
+            "rumble": "🎬",
             "both": "✅"}.get(source, "❌")
 
     def get_class_and_checked(match_type, video):

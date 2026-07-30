@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 from functools import lru_cache
 from rapidfuzz.distance import Indel
 from modules.names_youtube import search_youtube
@@ -20,6 +21,13 @@ def open_files(*file_paths):
             print(f"⚠️ File not found: {file_path}. Skipping.")
             names_text.append(None)
     return names_text
+
+def tvdb_date_to_iso(date_text):
+    """Converts a TVDB air date like 'September 20, 1986' to '1986-09-20', or None if unparseable."""
+    try:
+        return datetime.strptime(date_text, "%B %d, %Y").date().isoformat()
+    except (ValueError, TypeError):
+        return None
 
 @lru_cache(maxsize=None)
 def clean_title(title, header=False):
@@ -111,15 +119,21 @@ def total_movies(web_videos, header=False, roeper=False):
 def compare_titles(primary_episode_list,
                    website_episode_list,
                    youtube_episode_list=None,
-                   roeper=False):
+                   roeper=False,
+                   episode_dates=None,
+                   rumble_dates=None):
     """
     Reconciles the primary episode list (TVDB) with website and YouTube lists.
-    
+
     Args:
         primary_episode_list (list): Main episode list (TVDB).
         website_episode_list (list): Episodes from website archive.
         youtube_episode_list (list): Episodes from YouTube.
         roeper (bool): If True, assumes Ebert & Roeper era.
+        episode_dates (list): TVDB air dates, same order as primary_episode_list.
+            Used to look episodes up by date when they aren't found by title.
+        rumble_dates (dict): {'YYYY-MM-DD': url} scraped from the Rumble playlist,
+            used as a last-resort fallback keyed on the exact TVDB air date.
     """
 
     results = []
@@ -137,10 +151,12 @@ def compare_titles(primary_episode_list,
         for line in youtube_episode_list
     ] if youtube_episode_list else None
 
-    for primary_episode in primary_episode_list:
+    for episode_index, primary_episode in enumerate(primary_episode_list):
 
         if not re.search(r'[^0-9]/[^0-9]', primary_episode):
             continue
+
+        episode_date = episode_dates[episode_index] if episode_dates else None
 
         primary_cleaned = clean_title(primary_episode, header=False)
 
@@ -152,15 +168,31 @@ def compare_titles(primary_episode_list,
         if youtube_episode_list is not None:
 
             match_yt, inc_yt = find_match(primary_cleaned, yt_processed)
+            source_override = None
+            query_prefix = "Ebert" if roeper else "Siskel & Ebert"
+
+            if not match_yt and not match_web and rumble_dates:
+                # Check the pre-scraped Rumble playlist by exact TVDB air date, alongside
+                # the other local sources (Rumble titles are just dates, not movie names,
+                # so this can't use the title-based find_match() used for web/YouTube).
+                iso_date = tvdb_date_to_iso(episode_date) if episode_date else None
+                rumble_url = rumble_dates.get(iso_date) if iso_date else None
+                if rumble_url:
+                    # Include "(YYYY)" so stats.py's year-detection regex can use this
+                    # match as a year anchor, same as YouTube/web matches do.
+                    match_yt = f"{query_prefix} ({iso_date[:4]}) - Rumble: {rumble_url}"
+                    inc_yt = False
+                    source_override = "rumble"
+                    print(f"   ✅ Found on Rumble by date: {rumble_url}")
 
             if not match_yt and not match_web:
-                # Attempt to search YouTube globally if not found in the channel
-                query_prefix = "Ebert" if roeper else "Siskel & Ebert"
+                # Last resort: still not found locally (website/channel/Rumble), so
+                # search all of YouTube for the episode by title.
                 # Remove leading numbering (e.g., "1 ") but keep slashes for the smart search
                 clean_query_text = re.sub(r"^\d+\s*", "", primary_episode)
-                
+
                 print(f"🔎 Searching YouTube for: '{clean_query_text}'...")
-                
+
                 def validate_match(title):
                     """
                     Validates if a found YouTube title is a sufficiently good match.
@@ -185,7 +217,7 @@ def compare_titles(primary_episode_list,
                     return compare_lists(primary_cleaned, found_cleaned) >= required_matches
 
                 found_title = search_youtube(clean_query_text, prefix=query_prefix, validator=validate_match)
-                
+
                 if found_title:
                     match_yt = found_title
                     inc_yt = is_incomplete(found_title)
@@ -205,7 +237,7 @@ def compare_titles(primary_episode_list,
                 source = "both"
 
             elif match_yt:
-                match, inc, source = match_yt, inc_yt, "youtube"
+                match, inc, source = match_yt, inc_yt, source_override or "youtube"
 
             elif match_web:
                 match, inc, source = match_web, inc_web, "web"
