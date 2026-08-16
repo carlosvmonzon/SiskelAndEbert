@@ -85,5 +85,4 @@ def create_data(channel_url = 'https://www.youtube.com/@TheMisadventuresofSiskel
     save_titles_to_file(titles, output_path)
 
 if __name__ == '__main__':
-    url = 'https://www.youtube.com/@TheMisadventuresofSiskelEbert/videos'
     create_data()

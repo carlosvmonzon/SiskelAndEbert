@@ -1,3 +1,4 @@
+from concurrent.futures import ThreadPoolExecutor
 from modules.names_reviews import create_data as update_review_site_data
 from modules.names_tvdb import create_data as update_tvdb_data
 from modules.names_youtube import create_data as update_youtube_data
@@ -40,25 +41,27 @@ else:
 rumble_filepath = 'data/rumble_episodes.txt'
 
 update = input('Do you want to update the data files? (Y/n): ').strip().lower()
+should_update = update in ('y', '')
 new_rumble_dates = set()
-if update in ('y', ''):
+if should_update:
     print("🔄 Creating data files...")
     # The siskelebert.org site is down, but its data was archived.
     # To re-scrape, you would run: update_review_site_data()
 
-    # Update TVDB data with mode-specific parameters
+    # TVDB, YouTube, and Rumble are independent sources, so scrape them concurrently
+    # instead of paying the sum of all three scrape times back-to-back (Rumble alone,
+    # which scrolls the full playlist with a real browser, takes a couple of minutes).
     print(f"Updating TVDB data for {'Ebert & Roeper' if ROEPER_MODE else 'Siskel & Ebert'}...")
-    update_tvdb_data(**tvdb_update_params)
-
-    # YouTube data is the same for both modes
     print("Updating YouTube video titles...")
-    update_youtube_data()
-
-    # Rumble data is the same for both modes; this scrolls the full playlist with a
-    # real browser (Rumble blocks plain HTTP requests), so it takes a couple of minutes.
     print("Updating Rumble episode dates...")
     rumble_dates_before = load_rumble_dates(rumble_filepath)
-    update_rumble_data(output_path=rumble_filepath)
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        tvdb_future = executor.submit(update_tvdb_data, **tvdb_update_params)
+        youtube_future = executor.submit(update_youtube_data)
+        rumble_future = executor.submit(update_rumble_data, output_path=rumble_filepath)
+        tvdb_future.result()
+        youtube_future.result()
+        rumble_future.result()
     new_rumble_dates = set(load_rumble_dates(rumble_filepath)) - set(rumble_dates_before)
 
 # Load data files for the selected mode
@@ -79,7 +82,7 @@ rumble_dates = load_rumble_dates(rumble_filepath)
 print("Comparing episode lists...")
 results = compare_titles(tvdb_episodes, website_episodes, youtube_videos, roeper=ROEPER_MODE,
                           episode_dates=tvdb_dates, rumble_dates=rumble_dates,
-                          live_search=update in ('y', ''), new_rumble_dates=new_rumble_dates)
+                          live_search=should_update, new_rumble_dates=new_rumble_dates)
 
 print("Generating HTML report...")
 write_html(results, roeper=ROEPER_MODE)

@@ -11,15 +11,21 @@ from modules.names_youtube import search_youtube
 FUZZY_MATCH_THRESHOLD = 0.8
 MIN_MOVIE_MATCHES = 2
 
+def read_lines_or_none(file_path):
+    """Reads a file's stripped, non-blank lines, or None if it doesn't exist."""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            return [line.strip() for line in file if line.strip()]
+    except FileNotFoundError:
+        return None
+
 def open_files(*file_paths):
     names_text = []
     for file_path in file_paths:
-        try:
-            with open(file_path, 'r', encoding='utf-8') as file:
-                names_text.append([line.strip() for line in file if line.strip()])
-        except FileNotFoundError:
+        lines = read_lines_or_none(file_path)
+        if lines is None:
             print(f"⚠️ File not found: {file_path}. Skipping.")
-            names_text.append(None)
+        names_text.append(lines)
     return names_text
 
 def tvdb_date_to_iso(date_text):

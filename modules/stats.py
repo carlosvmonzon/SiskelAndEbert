@@ -1,9 +1,9 @@
 import re
 from collections import defaultdict
-import numpy as np
+from statistics import median
 from modules.preprocessing import clean_title, total_movies
 
-def count_year(results, web_videos):
+def count_year(results, web_videos, total_movies_count):
     """
     Analyzes the results to group episodes by year based on matched titles (usually from YouTube).
     It assumes the input list is chronological.
@@ -59,12 +59,12 @@ def count_year(results, web_videos):
         print(f"{year}: episodes={total_entries}, movies={total_movies_year}, no_match={no_match_episodes}")
 
     # Calculate overall statistics
-    overall_total_movies = total_movies(web_videos)
-    print(f"\nTotal movies: {overall_total_movies}")
+    print(f"\nTotal movies: {total_movies_count}")
+    print(f"Average movies per episode: {total_movies_count / len(web_videos):.2f}")
     # Estimate total movies if every episode had exactly 5 movies (common for Siskel & Ebert)
     print(f"Total movies (assuming 5 per episode): {sum(year_counts.values()) * 5}")
-    print(f"Average titles per year: {np.median(list(year_counts.values())):.2f}")
-    print(f"Average movies per year: {np.median(list(movie_counts.values())):.2f}")
+    print(f"Average titles per year: {median(year_counts.values()):.2f}")
+    print(f"Average movies per year: {median(movie_counts.values()):.2f}")
 
 def match_summary(results):
     """
@@ -78,29 +78,28 @@ def match_summary(results):
     for key in sorted(match_counts):
         print(f"{key}: {match_counts[key]}")
 
-def completion_rate(results, web_videos):
+def completion_rate(results, total_movies_count):
     """
     Calculates and prints the completion rate based on individual movie titles matched.
     """
     # Count episodes marked as incomplete (where only some segments were found)
     incomplete_count = sum(1 for _, _, status, _, inc in results if status == "match" and inc)
     print(f"\n⚠️ Incomplete matches: {incomplete_count}")
-    
+
     # Sum the number of movies in matched episodes
     matched_titles = sum(
         len(clean_title(web_episode, header=False))
         for web_episode, _, status, _, _ in results if status == "match"
     )
-    
-    # Total movies in the source list (TVDB)
-    total = total_movies(web_videos)
-    if total > 0:
-        print(f"\n📊 Estimated Completion Rate: {matched_titles} / {total} = {matched_titles / total:.2%}")
+
+    if total_movies_count > 0:
+        print(f"\n📊 Estimated Completion Rate: {matched_titles} / {total_movies_count} = {matched_titles / total_movies_count:.2%}")
     else:
         print("\n📊 Estimated Completion Rate: 0 / 0 = 0.00%")
 
 def stats(results, web_videos):
     # Main calls
-    count_year(results, web_videos)
+    total_movies_count = total_movies(web_videos)
+    count_year(results, web_videos, total_movies_count)
     match_summary(results)
-    completion_rate(results, web_videos)
+    completion_rate(results, total_movies_count)

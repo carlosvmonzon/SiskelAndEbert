@@ -1,4 +1,3 @@
-import os
 import re
 import time
 from datetime import datetime
@@ -6,6 +5,9 @@ from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+
+from modules.names_youtube import save_titles_to_file
+from modules.preprocessing import read_lines_or_none
 
 # Matches the "M-D-YY" (or "MM-DD-YY") date embedded in Rumble's video URL slugs,
 # e.g. ".../siskel-and-ebert-3-28-87.html" or ".../ebert-and-roeper-and-the-movies-1-20-01.html"
@@ -89,27 +91,25 @@ def create_data(playlist_url=PLAYLIST_URL, output_path="data/rumble_episodes.txt
     """Scrapes the Rumble playlist once and saves 'YYYY-MM-DD\\turl' lines, one per video found."""
     urls = scrape_playlist_urls(playlist_url)
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        for url in urls:
-            if not _is_genuine_episode_url(url):
-                continue
-            date = _parse_date_from_url(url)
-            if date:
-                f.write(f"{date.isoformat()}\t{url}\n")
+    lines = []
+    for url in urls:
+        if not _is_genuine_episode_url(url):
+            continue
+        date = _parse_date_from_url(url)
+        if date:
+            lines.append(f"{date.isoformat()}\t{url}")
+    save_titles_to_file(lines, output_path)
 
 
 def load_rumble_dates(file_path="data/rumble_episodes.txt"):
     """Loads the scraped Rumble data into a dict of {date(YYYY-MM-DD): url}."""
-    dates = {}
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                date_str, url = line.split("\t", 1)
-                dates[date_str] = url
-    except FileNotFoundError:
+    lines = read_lines_or_none(file_path)
+    if lines is None:
         print(f"⚠️ File not found: {file_path}. Skipping Rumble fallback.")
+        return {}
+
+    dates = {}
+    for line in lines:
+        date_str, url = line.split("\t", 1)
+        dates[date_str] = url
     return dates

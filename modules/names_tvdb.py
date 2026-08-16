@@ -1,7 +1,7 @@
 import requests, re
-import os
 from bs4 import BeautifulSoup
-                
+from modules.names_youtube import save_titles_to_file
+
 def get_tvdb_episodes(url, min_i, max_i):
 
     headers = {"User-Agent": "Mozilla/5.0"}
@@ -44,14 +44,9 @@ def create_data(url_snippet="siskel-and-ebert-at-the-movies", output_path="data/
     # Get episode titles and air dates from TVDB
     url = f"https://thetvdb.com/series/{url_snippet}/allseasons/official"
     tvdb_episodes, tvdb_dates = get_tvdb_episodes(url, min_i=min_i, max_i=max_i)
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        for video in tvdb_episodes:
-            f.write(video + "\n")
+    save_titles_to_file(tvdb_episodes, output_path)
 
     # Air dates are written to a parallel file (same order as output_path), so the
     # Rumble-matching fallback can look an episode up by its exact air date.
     dates_path = re.sub(r"\.txt$", "_dates.txt", output_path)
-    with open(dates_path, "w", encoding="utf-8") as f:
-        for date_text in tvdb_dates:
-            f.write(date_text + "\n")
+    save_titles_to_file(tvdb_dates, dates_path)
