@@ -16,8 +16,8 @@ It compares episode data from various sources (TheTVDB, an archived fan site, a 
 
 For each TVDB episode, a match is looked for in this order:
 1. The archived website list / local YouTube channel data (instant, no network calls).
-2. A live YouTube search by episode title (via `search_youtube` in `names_youtube.py`).
-3. A lookup by exact TVDB air date against the pre-scraped Rumble playlist (`rumble_scraper.py`). Rumble's videos are titled with just a date (e.g. "Siskel & Ebert: 3-28-87"), not the movies reviewed, so this step matches on date rather than title.
+2. A lookup by exact TVDB air date against the pre-scraped Rumble playlist (`rumble_scraper.py`). Rumble's videos are titled with just a date (e.g. "Siskel & Ebert: 3-28-87"), not the movies reviewed, so this step matches on date rather than title.
+3. A live YouTube search by episode title (via `search_youtube` in `names_youtube.py`) — only performed when you choose to update the data files (see below).
 
 Rumble is behind Cloudflare and blocks plain HTTP scraping, so `rumble_scraper.py` uses Selenium (a real browser) to load and scroll the playlist once; the result is cached in `data/rumble_episodes.txt` and reused across runs instead of being re-scraped per episode.
 
@@ -60,6 +60,8 @@ python main.py
 ```
 
 The script will first ask if you want to update the data files by re-scraping the sources.
+- Answering **Y** (or Enter) re-scrapes TVDB, YouTube, and the Rumble playlist, then also enables the live YouTube search fallback (step 3 above) for episodes still unmatched afterward. If that re-scrape adds air dates to the Rumble playlist that weren't there before, the console prints those as new Rumble matches are applied.
+- Answering **n** reuses the existing data files as-is and skips the live YouTube search fallback entirely — only the local website/YouTube/Rumble data is used to match episodes.
 
 Based on the configuration in `main.py`, it will then:
 1.  Perform the comparison for either "Siskel & Ebert" or "Ebert & Roeper".

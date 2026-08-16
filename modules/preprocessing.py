@@ -121,7 +121,9 @@ def compare_titles(primary_episode_list,
                    youtube_episode_list=None,
                    roeper=False,
                    episode_dates=None,
-                   rumble_dates=None):
+                   rumble_dates=None,
+                   live_search=True,
+                   new_rumble_dates=None):
     """
     Reconciles the primary episode list (TVDB) with website and YouTube lists.
 
@@ -134,6 +136,11 @@ def compare_titles(primary_episode_list,
             Used to look episodes up by date when they aren't found by title.
         rumble_dates (dict): {'YYYY-MM-DD': url} scraped from the Rumble playlist,
             used as a last-resort fallback keyed on the exact TVDB air date.
+        live_search (bool): If False, skip the live YouTube search fallback and
+            rely only on the local website/YouTube/Rumble data.
+        new_rumble_dates (set): ISO dates that appeared in the Rumble playlist for
+            the first time in this run. A Rumble fallback match is only printed
+            when its date is in this set, so re-runs don't reprint old matches.
     """
 
     results = []
@@ -183,9 +190,10 @@ def compare_titles(primary_episode_list,
                     match_yt = f"{query_prefix} ({iso_date[:4]}) - Rumble: {rumble_url}"
                     inc_yt = False
                     source_override = "rumble"
-                    print(f"   ✅ Found on Rumble by date: {rumble_url}")
+                    if new_rumble_dates and iso_date in new_rumble_dates:
+                        print(f"   ✅ Found new Rumble match by date: {rumble_url}")
 
-            if not match_yt and not match_web:
+            if not match_yt and not match_web and live_search:
                 # Last resort: still not found locally (website/channel/Rumble), so
                 # search all of YouTube for the episode by title.
                 # Remove leading numbering (e.g., "1 ") but keep slashes for the smart search

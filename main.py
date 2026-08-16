@@ -40,6 +40,7 @@ else:
 rumble_filepath = 'data/rumble_episodes.txt'
 
 update = input('Do you want to update the data files? (Y/n): ').strip().lower()
+new_rumble_dates = set()
 if update in ('y', ''):
     print("🔄 Creating data files...")
     # The siskelebert.org site is down, but its data was archived.
@@ -56,7 +57,9 @@ if update in ('y', ''):
     # Rumble data is the same for both modes; this scrolls the full playlist with a
     # real browser (Rumble blocks plain HTTP requests), so it takes a couple of minutes.
     print("Updating Rumble episode dates...")
+    rumble_dates_before = load_rumble_dates(rumble_filepath)
     update_rumble_data(output_path=rumble_filepath)
+    new_rumble_dates = set(load_rumble_dates(rumble_filepath)) - set(rumble_dates_before)
 
 # Load data files for the selected mode
 print(f"Loading data from '{tvdb_filepath}'...")
@@ -75,7 +78,8 @@ rumble_dates = load_rumble_dates(rumble_filepath)
 
 print("Comparing episode lists...")
 results = compare_titles(tvdb_episodes, website_episodes, youtube_videos, roeper=ROEPER_MODE,
-                          episode_dates=tvdb_dates, rumble_dates=rumble_dates)
+                          episode_dates=tvdb_dates, rumble_dates=rumble_dates,
+                          live_search=update in ('y', ''), new_rumble_dates=new_rumble_dates)
 
 print("Generating HTML report...")
 write_html(results, roeper=ROEPER_MODE)
